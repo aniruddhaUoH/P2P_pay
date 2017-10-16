@@ -1,0 +1,36 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1070px;
+  }
+}
+
+table {
+  width:70%;
+}
+
+th {
+  font-size: larger;
+}
+table, th, td {
+  /*border: 1px solid black;*/
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+  background-color:#fff;
+}
+table#t01 th {
+  background-color: #96cec5;
+  color: black;
+}
+.btn-primary{
+  background: #c2e59c;
+  background: linear-gradient(to right, #64b3f4, #c2e59c);
+  color: black;
+}

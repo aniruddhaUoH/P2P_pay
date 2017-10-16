@@ -1,0 +1,31 @@
+table {
+  width:50%;
+}
+table, th, td {
+  border-collapse: collapse;
+  white-space: pre;
+}
+tbody {
+  border: 1px solid black;
+}
+th, td {
+  padding: 25px;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+  background-color:#fff;
+}
+table#t01 th {
+  background-color: #96cec5;
+  color: black;
+}
+.btn-primary{
+  background: #c2e59c;
+  background: linear-gradient(to right, #64b3f4, #c2e59c);
+  color: black;
+}
+form {
+  margin-top: -25px;
+}

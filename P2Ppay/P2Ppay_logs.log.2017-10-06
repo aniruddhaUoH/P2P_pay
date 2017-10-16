@@ -1,0 +1,603 @@
+2017-10-06 10:09:17,659 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-2) --> userSignUp method in UserResource class:: 
+2017-10-06 10:09:17,665 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-2) In User delegate--------->addNewUser
+2017-10-06 10:09:17,665 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In startDBTransaction
+2017-10-06 10:09:17,674 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In setConnection
+2017-10-06 10:09:17,675 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In getConnection
+2017-10-06 10:09:17,675 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In <init>
+2017-10-06 10:09:17,675 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-2) In userSignIn
+2017-10-06 10:09:17,678 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In getConnection
+2017-10-06 10:09:17,679 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-2) In userSignIn
+2017-10-06 10:09:17,679 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In getConnection
+2017-10-06 10:09:17,695 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-06 10:09:17,696 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-06 10:09:17,696 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-06 10:09:17,696 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-06 10:09:17,697 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-06 10:09:17,697 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-2) ---> createSession method in SessionUtility class
+2017-10-06 10:09:17,699 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-2) Printing the status of the session: 
+2017-10-06 10:33:30,292 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-4) ---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-06 10:33:30,296 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-4) --> getSession method in Sessionutility class
+2017-10-06 10:33:30,296 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-4) Printing the status of the session: 
+2017-10-06 10:33:30,297 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-4) In transaction delegate--------->addMoneyToWallet
+2017-10-06 10:33:30,298 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In startDBTransaction
+2017-10-06 10:33:30,301 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In setConnection
+2017-10-06 10:33:30,302 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In getConnection
+2017-10-06 10:33:30,303 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-4) In <init>
+2017-10-06 10:33:30,303 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-4) In unloadMoneyFromWallet
+2017-10-06 10:33:30,305 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-4) In getConnection
+2017-10-06 10:33:30,306 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-4) In unloadMoneyFromWallet
+2017-10-06 10:33:30,307 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In getConnection
+2017-10-06 10:33:30,316 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In getConnection
+2017-10-06 10:33:30,317 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In getConnection
+2017-10-06 10:33:30,411 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-06 10:33:30,412 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-06 10:33:30,412 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-06 10:33:30,413 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In endDBTransaction
+2017-10-06 10:33:30,413 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In endDBTransaction
+2017-10-06 10:44:58,129 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-7) --> userSignUp method in UserResource class:: 
+2017-10-06 10:44:58,131 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-7) In User delegate--------->addNewUser
+2017-10-06 10:44:58,131 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In startDBTransaction
+2017-10-06 10:44:58,132 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In setConnection
+2017-10-06 10:44:58,133 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In getConnection
+2017-10-06 10:44:58,133 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-7) In <init>
+2017-10-06 10:44:58,133 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-7) In userSignIn
+2017-10-06 10:44:58,134 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-7) In getConnection
+2017-10-06 10:44:58,135 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-7) In userSignIn
+2017-10-06 10:44:58,143 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-7) In getConnection
+2017-10-06 10:44:58,147 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-7) In close
+2017-10-06 10:44:58,147 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-7) In close
+2017-10-06 10:44:58,148 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-7) In close
+2017-10-06 10:44:58,148 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In endDBTransaction
+2017-10-06 10:44:58,148 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In endDBTransaction
+2017-10-06 10:44:58,149 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-7) ---> createSession method in SessionUtility class
+2017-10-06 10:44:58,150 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-7) Printing the status of the session: 
+2017-10-06 10:45:13,719 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-9) ---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-06 10:45:13,721 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-9) --> getSession method in Sessionutility class
+2017-10-06 10:45:13,721 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-9) Printing the status of the session: 
+2017-10-06 10:45:13,721 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-9) In transaction delegate--------->addMoneyToWallet
+2017-10-06 10:45:13,721 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In startDBTransaction
+2017-10-06 10:45:13,723 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In setConnection
+2017-10-06 10:45:13,723 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In getConnection
+2017-10-06 10:45:13,723 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-9) In <init>
+2017-10-06 10:45:13,724 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-9) In unloadMoneyFromWallet
+2017-10-06 10:45:13,725 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-9) In getConnection
+2017-10-06 10:45:13,725 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-9) In unloadMoneyFromWallet
+2017-10-06 10:45:13,726 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In getConnection
+2017-10-06 10:45:13,727 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In getConnection
+2017-10-06 10:45:13,728 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In getConnection
+2017-10-06 10:45:13,729 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In close
+2017-10-06 10:45:13,730 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In close
+2017-10-06 10:45:13,730 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In close
+2017-10-06 10:45:13,730 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In endDBTransaction
+2017-10-06 10:45:13,730 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In endDBTransaction
+2017-10-06 12:42:55,437 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-13) --> userSignUp method in UserResource class:: 
+2017-10-06 12:42:55,438 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-13) In User delegate--------->addNewUser
+2017-10-06 12:42:55,439 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In startDBTransaction
+2017-10-06 12:42:55,439 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In setConnection
+2017-10-06 12:42:55,439 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In getConnection
+2017-10-06 12:42:55,441 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-13) In <init>
+2017-10-06 12:42:55,441 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-13) In userSignIn
+2017-10-06 12:42:55,442 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-13) In getConnection
+2017-10-06 12:42:55,442 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-13) In userSignIn
+2017-10-06 12:42:55,442 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In getConnection
+2017-10-06 12:42:55,444 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-06 12:42:55,444 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-06 12:42:55,445 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-06 12:42:55,445 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In endDBTransaction
+2017-10-06 12:42:55,448 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In endDBTransaction
+2017-10-06 12:42:55,488 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-13) ---> createSession method in SessionUtility class
+2017-10-06 12:42:55,488 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-13) Printing the status of the session: 
+2017-10-06 12:44:06,003 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-14) --> userSignUp method in UserResource class:: 
+2017-10-06 12:44:06,004 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-14) In User delegate--------->addNewUser
+2017-10-06 12:44:06,004 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In startDBTransaction
+2017-10-06 12:44:06,005 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In setConnection
+2017-10-06 12:44:06,005 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In getConnection
+2017-10-06 12:44:06,005 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-14) In <init>
+2017-10-06 12:44:06,006 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-14) In userSignIn
+2017-10-06 12:44:06,006 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-14) In getConnection
+2017-10-06 12:44:06,006 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-14) In userSignIn
+2017-10-06 12:44:06,006 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In getConnection
+2017-10-06 12:44:06,008 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-06 12:44:06,008 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-06 12:44:06,009 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-06 12:44:06,009 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In endDBTransaction
+2017-10-06 12:44:06,009 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In endDBTransaction
+2017-10-06 12:44:06,010 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-14) ---> createSession method in SessionUtility class
+2017-10-06 12:44:06,010 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-14) Printing the status of the session: 
+2017-10-06 15:58:24,165 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-18) --> userSignUp method in UserResource class:: 
+2017-10-06 15:58:24,174 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-18) In User delegate--------->addNewUser
+2017-10-06 15:58:24,175 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In startDBTransaction
+2017-10-06 15:58:24,176 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In setConnection
+2017-10-06 15:58:24,186 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In getConnection
+2017-10-06 15:58:24,186 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-18) In <init>
+2017-10-06 15:58:24,186 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-18) In userSignIn
+2017-10-06 15:58:24,187 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-18) In getConnection
+2017-10-06 15:58:24,187 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-18) In userSignIn
+2017-10-06 15:58:24,187 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In getConnection
+2017-10-06 15:58:24,188 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In close
+2017-10-06 15:58:24,189 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In close
+2017-10-06 15:58:24,189 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In close
+2017-10-06 15:58:24,189 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In endDBTransaction
+2017-10-06 15:58:24,189 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In endDBTransaction
+2017-10-06 15:58:24,190 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-18) ---> createSession method in SessionUtility class
+2017-10-06 15:58:24,191 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-18) Printing the status of the session: 
+2017-10-06 15:59:19,052 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-19) --> userSignUp method in UserResource class:: 
+2017-10-06 15:59:19,053 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-19) In User delegate--------->addNewUser
+2017-10-06 15:59:19,053 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In startDBTransaction
+2017-10-06 15:59:19,053 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In setConnection
+2017-10-06 15:59:19,054 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In getConnection
+2017-10-06 15:59:19,054 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-19) In <init>
+2017-10-06 15:59:19,054 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-19) In userSignIn
+2017-10-06 15:59:19,054 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-19) In getConnection
+2017-10-06 15:59:19,054 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-19) In userSignIn
+2017-10-06 15:59:19,055 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In getConnection
+2017-10-06 15:59:19,056 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-06 15:59:19,056 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-06 15:59:19,057 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-06 15:59:19,057 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In endDBTransaction
+2017-10-06 15:59:19,057 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In endDBTransaction
+2017-10-06 15:59:19,057 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-19) ---> createSession method in SessionUtility class
+2017-10-06 15:59:19,057 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-19) Printing the status of the session: 
+2017-10-06 15:59:25,686 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-21) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 15:59:25,686 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-21) --> getSession method in Sessionutility class
+2017-10-06 15:59:25,686 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-21) Printing the status of the session: 
+2017-10-06 15:59:25,686 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In startDBTransaction
+2017-10-06 15:59:25,687 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In setConnection
+2017-10-06 15:59:25,687 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In getConnection
+2017-10-06 15:59:25,687 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-21) In <init>
+2017-10-06 15:59:25,687 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-21) In getConnection
+2017-10-06 15:59:25,687 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-21) In getListOfFriends
+2017-10-06 15:59:25,687 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In getConnection
+2017-10-06 15:59:25,689 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In getConnection
+2017-10-06 15:59:25,690 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-06 15:59:25,690 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-06 15:59:25,690 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-06 15:59:25,690 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In endDBTransaction
+2017-10-06 15:59:25,690 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In endDBTransaction
+2017-10-06 16:57:06,146 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-25) --> userSignUp method in UserResource class:: 
+2017-10-06 16:57:06,148 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-25) In User delegate--------->addNewUser
+2017-10-06 16:57:06,148 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In startDBTransaction
+2017-10-06 16:57:06,149 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In setConnection
+2017-10-06 16:57:06,150 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In getConnection
+2017-10-06 16:57:06,150 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-25) In <init>
+2017-10-06 16:57:06,150 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-25) In userSignIn
+2017-10-06 16:57:06,152 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-25) In getConnection
+2017-10-06 16:57:06,152 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-25) In userSignIn
+2017-10-06 16:57:06,152 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In getConnection
+2017-10-06 16:57:06,153 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In close
+2017-10-06 16:57:06,154 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In close
+2017-10-06 16:57:06,154 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In close
+2017-10-06 16:57:06,154 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In endDBTransaction
+2017-10-06 16:57:06,154 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In endDBTransaction
+2017-10-06 16:57:06,155 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-25) ---> createSession method in SessionUtility class
+2017-10-06 16:57:06,155 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-25) Printing the status of the session: 
+2017-10-06 16:57:09,088 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-28) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 16:57:09,088 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-29) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 16:57:09,088 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-28) --> getSession method in Sessionutility class
+2017-10-06 16:57:09,088 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-29) --> getSession method in Sessionutility class
+2017-10-06 16:57:09,088 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-28) Printing the status of the session: 
+2017-10-06 16:57:09,088 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-29) Printing the status of the session: 
+2017-10-06 16:57:09,088 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-29) In User Delegate------> getPendingRequests
+2017-10-06 16:57:09,088 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-28) In User Delegate------> getListOfFriends
+2017-10-06 16:57:09,088 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-29) In startDBTransaction
+2017-10-06 16:57:09,089 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In startDBTransaction
+2017-10-06 16:57:09,089 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-29) In setConnection
+2017-10-06 16:57:09,089 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-29) In getConnection
+2017-10-06 16:57:09,090 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-29) In <init>
+2017-10-06 16:57:09,090 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-29) In getConnection
+2017-10-06 16:57:09,090 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-29) In getPendingRequests
+2017-10-06 16:57:09,090 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-29) In getConnection
+2017-10-06 16:57:09,091 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-29) In getConnection
+2017-10-06 16:57:09,098 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-29) In close
+2017-10-06 16:57:09,098 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-29) In close
+2017-10-06 16:57:09,098 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-29) In close
+2017-10-06 16:57:09,098 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-29) In endDBTransaction
+2017-10-06 16:57:09,098 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-29) In endDBTransaction
+2017-10-06 16:57:09,103 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In setConnection
+2017-10-06 16:57:09,103 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In getConnection
+2017-10-06 16:57:09,103 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-28) In <init>
+2017-10-06 16:57:09,103 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-28) In getConnection
+2017-10-06 16:57:09,103 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-28) In getListOfFriends
+2017-10-06 16:57:09,103 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In getConnection
+2017-10-06 16:57:09,104 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In getConnection
+2017-10-06 16:57:09,105 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In close
+2017-10-06 16:57:09,106 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In close
+2017-10-06 16:57:09,106 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In close
+2017-10-06 16:57:09,106 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In endDBTransaction
+2017-10-06 16:57:09,106 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In endDBTransaction
+2017-10-06 17:01:07,937 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-30) --> userSignUp method in UserResource class:: 
+2017-10-06 17:01:07,939 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-30) In User delegate--------->addNewUser
+2017-10-06 17:01:07,940 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-30) In startDBTransaction
+2017-10-06 17:01:07,941 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-30) In setConnection
+2017-10-06 17:01:07,942 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-30) In getConnection
+2017-10-06 17:01:07,942 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-30) In <init>
+2017-10-06 17:01:07,942 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-30) In userSignIn
+2017-10-06 17:01:07,944 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-30) In getConnection
+2017-10-06 17:01:07,944 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-30) In userSignIn
+2017-10-06 17:01:07,944 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-30) In getConnection
+2017-10-06 17:01:07,947 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-30) In close
+2017-10-06 17:01:07,947 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-30) In close
+2017-10-06 17:01:07,948 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-30) In close
+2017-10-06 17:01:07,948 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-30) In endDBTransaction
+2017-10-06 17:01:07,948 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-30) In endDBTransaction
+2017-10-06 17:01:07,952 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-30) ---> createSession method in SessionUtility class
+2017-10-06 17:01:07,962 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-30) Printing the status of the session: 
+2017-10-06 17:01:12,599 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-31) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:01:12,599 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-31) --> getSession method in Sessionutility class
+2017-10-06 17:01:12,599 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-31) Printing the status of the session: 
+2017-10-06 17:01:12,599 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-31) In User Delegate------> getListOfFriends
+2017-10-06 17:01:12,599 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In startDBTransaction
+2017-10-06 17:01:12,600 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In setConnection
+2017-10-06 17:01:12,601 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In getConnection
+2017-10-06 17:01:12,601 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-31) In <init>
+2017-10-06 17:01:12,601 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-31) In getConnection
+2017-10-06 17:01:12,601 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-31) In getListOfFriends
+2017-10-06 17:01:12,601 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-31) In getConnection
+2017-10-06 17:01:12,601 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-32) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:01:12,601 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-32) --> getSession method in Sessionutility class
+2017-10-06 17:01:12,601 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-32) Printing the status of the session: 
+2017-10-06 17:01:12,601 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-32) In User Delegate------> getPendingRequests
+2017-10-06 17:01:12,602 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In startDBTransaction
+2017-10-06 17:01:12,602 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In setConnection
+2017-10-06 17:01:12,602 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In getConnection
+2017-10-06 17:01:12,602 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-32) In <init>
+2017-10-06 17:01:12,602 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-31) In getConnection
+2017-10-06 17:01:12,602 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-32) In getConnection
+2017-10-06 17:01:12,602 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-32) In getPendingRequests
+2017-10-06 17:01:12,602 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-32) In getConnection
+2017-10-06 17:01:12,603 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-31) In close
+2017-10-06 17:01:12,603 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-31) In close
+2017-10-06 17:01:12,603 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-31) In close
+2017-10-06 17:01:12,603 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In endDBTransaction
+2017-10-06 17:01:12,604 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In endDBTransaction
+2017-10-06 17:01:12,604 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-32) In getConnection
+2017-10-06 17:01:12,605 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-32) In close
+2017-10-06 17:01:12,605 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-32) In close
+2017-10-06 17:01:12,606 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-32) In close
+2017-10-06 17:01:12,606 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In endDBTransaction
+2017-10-06 17:01:12,606 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In endDBTransaction
+2017-10-06 17:03:59,043 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-33) --> userSignUp method in UserResource class:: 
+2017-10-06 17:03:59,044 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-33) In User delegate--------->addNewUser
+2017-10-06 17:03:59,044 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In startDBTransaction
+2017-10-06 17:03:59,045 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In setConnection
+2017-10-06 17:03:59,045 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In getConnection
+2017-10-06 17:03:59,045 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-33) In <init>
+2017-10-06 17:03:59,045 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-33) In userSignIn
+2017-10-06 17:03:59,046 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-33) In getConnection
+2017-10-06 17:03:59,046 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-33) In userSignIn
+2017-10-06 17:03:59,046 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-33) In getConnection
+2017-10-06 17:03:59,048 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-33) In close
+2017-10-06 17:03:59,051 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-33) In close
+2017-10-06 17:03:59,051 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-33) In close
+2017-10-06 17:03:59,051 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In endDBTransaction
+2017-10-06 17:03:59,052 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In endDBTransaction
+2017-10-06 17:03:59,052 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-33) ---> createSession method in SessionUtility class
+2017-10-06 17:03:59,053 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-33) Printing the status of the session: 
+2017-10-06 17:04:01,531 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-34) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:04:01,531 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-34) --> getSession method in Sessionutility class
+2017-10-06 17:04:01,531 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-34) Printing the status of the session: 
+2017-10-06 17:04:01,531 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-34) In User Delegate------> getListOfFriends
+2017-10-06 17:04:01,531 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-34) In startDBTransaction
+2017-10-06 17:04:01,533 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-34) In setConnection
+2017-10-06 17:04:01,533 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-34) In getConnection
+2017-10-06 17:04:01,533 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-34) In <init>
+2017-10-06 17:04:01,533 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-34) In getConnection
+2017-10-06 17:04:01,533 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-34) In getListOfFriends
+2017-10-06 17:04:01,533 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-34) In getConnection
+2017-10-06 17:04:01,534 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-35) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:04:01,534 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-35) --> getSession method in Sessionutility class
+2017-10-06 17:04:01,534 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-35) Printing the status of the session: 
+2017-10-06 17:04:01,534 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-34) In getConnection
+2017-10-06 17:04:01,534 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-35) In User Delegate------> getPendingRequests
+2017-10-06 17:04:01,535 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In startDBTransaction
+2017-10-06 17:04:01,535 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In setConnection
+2017-10-06 17:04:01,535 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In getConnection
+2017-10-06 17:04:01,535 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-35) In <init>
+2017-10-06 17:04:01,535 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-35) In getConnection
+2017-10-06 17:04:01,535 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-35) In getPendingRequests
+2017-10-06 17:04:01,535 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-35) In getConnection
+2017-10-06 17:04:01,536 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-34) In close
+2017-10-06 17:04:01,536 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-34) In close
+2017-10-06 17:04:01,536 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-34) In close
+2017-10-06 17:04:01,536 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-34) In endDBTransaction
+2017-10-06 17:04:01,536 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-34) In endDBTransaction
+2017-10-06 17:04:01,537 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-35) In getConnection
+2017-10-06 17:04:01,538 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-35) In close
+2017-10-06 17:04:01,539 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-35) In close
+2017-10-06 17:04:01,539 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-35) In close
+2017-10-06 17:04:01,539 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In endDBTransaction
+2017-10-06 17:04:01,539 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In endDBTransaction
+2017-10-06 17:04:40,965 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-36) --> userSignUp method in UserResource class:: 
+2017-10-06 17:04:40,965 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-36) In User delegate--------->addNewUser
+2017-10-06 17:04:40,965 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-36) In startDBTransaction
+2017-10-06 17:04:40,966 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-36) In setConnection
+2017-10-06 17:04:40,966 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-36) In getConnection
+2017-10-06 17:04:40,966 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-36) In <init>
+2017-10-06 17:04:40,967 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-36) In userSignIn
+2017-10-06 17:04:40,967 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-36) In getConnection
+2017-10-06 17:04:40,967 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-36) In userSignIn
+2017-10-06 17:04:40,967 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-36) In getConnection
+2017-10-06 17:04:40,969 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-36) In close
+2017-10-06 17:04:40,970 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-36) In close
+2017-10-06 17:04:40,970 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-36) In close
+2017-10-06 17:04:40,970 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-36) In endDBTransaction
+2017-10-06 17:04:40,971 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-36) In endDBTransaction
+2017-10-06 17:04:40,974 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-36) ---> createSession method in SessionUtility class
+2017-10-06 17:04:40,974 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-36) Printing the status of the session: 
+2017-10-06 17:04:43,226 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-37) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:04:43,226 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-37) --> getSession method in Sessionutility class
+2017-10-06 17:04:43,226 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-37) Printing the status of the session: 
+2017-10-06 17:04:43,226 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-37) In User Delegate------> getListOfFriends
+2017-10-06 17:04:43,226 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-37) In startDBTransaction
+2017-10-06 17:04:43,226 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-37) In setConnection
+2017-10-06 17:04:43,226 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-37) In getConnection
+2017-10-06 17:04:43,226 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-37) In <init>
+2017-10-06 17:04:43,226 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-37) In getConnection
+2017-10-06 17:04:43,227 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-37) In getListOfFriends
+2017-10-06 17:04:43,227 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-37) In getConnection
+2017-10-06 17:04:43,227 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-38) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:04:43,227 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-38) --> getSession method in Sessionutility class
+2017-10-06 17:04:43,227 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-38) Printing the status of the session: 
+2017-10-06 17:04:43,227 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-38) In User Delegate------> getPendingRequests
+2017-10-06 17:04:43,227 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In startDBTransaction
+2017-10-06 17:04:43,227 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In setConnection
+2017-10-06 17:04:43,227 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In getConnection
+2017-10-06 17:04:43,228 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-38) In <init>
+2017-10-06 17:04:43,228 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-37) In getConnection
+2017-10-06 17:04:43,228 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-38) In getConnection
+2017-10-06 17:04:43,228 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-38) In getPendingRequests
+2017-10-06 17:04:43,228 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-38) In getConnection
+2017-10-06 17:04:43,229 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-38) In getConnection
+2017-10-06 17:04:43,229 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-37) In close
+2017-10-06 17:04:43,230 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-37) In close
+2017-10-06 17:04:43,230 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-37) In close
+2017-10-06 17:04:43,230 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-37) In endDBTransaction
+2017-10-06 17:04:43,230 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-37) In endDBTransaction
+2017-10-06 17:04:43,230 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-38) In close
+2017-10-06 17:04:43,230 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-38) In close
+2017-10-06 17:04:43,230 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-38) In close
+2017-10-06 17:04:43,230 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In endDBTransaction
+2017-10-06 17:04:43,230 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In endDBTransaction
+2017-10-06 17:05:59,989 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-39) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:05:59,989 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-39) --> getSession method in Sessionutility class
+2017-10-06 17:05:59,989 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-39) Printing the status of the session: 
+2017-10-06 17:05:59,990 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-39) In User Delegate------> getListOfFriends
+2017-10-06 17:05:59,990 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-39) In startDBTransaction
+2017-10-06 17:05:59,990 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-39) In setConnection
+2017-10-06 17:05:59,990 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-39) In getConnection
+2017-10-06 17:05:59,990 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-39) In <init>
+2017-10-06 17:05:59,990 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-39) In getConnection
+2017-10-06 17:05:59,990 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-39) In getListOfFriends
+2017-10-06 17:05:59,990 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-39) In getConnection
+2017-10-06 17:05:59,991 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-39) In getConnection
+2017-10-06 17:05:59,992 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-39) In close
+2017-10-06 17:05:59,993 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-39) In close
+2017-10-06 17:05:59,993 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-39) In close
+2017-10-06 17:05:59,993 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-39) In endDBTransaction
+2017-10-06 17:05:59,993 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-39) In endDBTransaction
+2017-10-06 17:05:59,999 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-40) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:05:59,999 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-40) --> getSession method in Sessionutility class
+2017-10-06 17:05:59,999 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-40) Printing the status of the session: 
+2017-10-06 17:05:59,999 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-40) In User Delegate------> getPendingRequests
+2017-10-06 17:05:59,999 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-40) In startDBTransaction
+2017-10-06 17:06:00,000 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-40) In setConnection
+2017-10-06 17:06:00,000 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-40) In getConnection
+2017-10-06 17:06:00,001 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-40) In <init>
+2017-10-06 17:06:00,001 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-40) In getConnection
+2017-10-06 17:06:00,001 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-40) In getPendingRequests
+2017-10-06 17:06:00,001 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-40) In getConnection
+2017-10-06 17:06:00,002 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-40) In getConnection
+2017-10-06 17:06:00,003 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-40) In close
+2017-10-06 17:06:00,003 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-40) In close
+2017-10-06 17:06:00,004 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-40) In close
+2017-10-06 17:06:00,004 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-40) In endDBTransaction
+2017-10-06 17:06:00,004 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-40) In endDBTransaction
+2017-10-06 17:49:38,143 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-45) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:49:38,143 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-45) --> getSession method in Sessionutility class
+2017-10-06 17:49:38,143 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-45) Printing the status of the session: 
+2017-10-06 17:49:38,144 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-46) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 17:49:38,144 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-46) --> getSession method in Sessionutility class
+2017-10-06 17:49:38,144 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-46) Printing the status of the session: 
+2017-10-06 18:05:05,112 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-48) --> userSignUp method in UserResource class:: 
+2017-10-06 18:05:05,115 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-48) In User delegate--------->addNewUser
+2017-10-06 18:05:05,115 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-48) In startDBTransaction
+2017-10-06 18:05:05,116 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-48) In setConnection
+2017-10-06 18:05:05,117 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-48) In getConnection
+2017-10-06 18:05:05,117 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-48) In <init>
+2017-10-06 18:05:05,118 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-48) In userSignIn
+2017-10-06 18:05:05,119 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-48) In getConnection
+2017-10-06 18:05:05,119 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-48) In userSignIn
+2017-10-06 18:05:05,119 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-48) In getConnection
+2017-10-06 18:05:05,121 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-48) In close
+2017-10-06 18:05:05,122 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-48) In close
+2017-10-06 18:05:05,122 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-48) In close
+2017-10-06 18:05:05,122 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-48) In endDBTransaction
+2017-10-06 18:05:05,122 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-48) In endDBTransaction
+2017-10-06 18:05:05,123 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-48) ---> createSession method in SessionUtility class
+2017-10-06 18:05:05,123 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-48) Printing the status of the session: 
+2017-10-06 18:06:17,996 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-49) --> userSignUp method in UserResource class:: 
+2017-10-06 18:06:17,996 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-49) In User delegate--------->addNewUser
+2017-10-06 18:06:17,997 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-49) In startDBTransaction
+2017-10-06 18:06:17,998 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-49) In setConnection
+2017-10-06 18:06:17,999 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-49) In getConnection
+2017-10-06 18:06:18,000 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-49) In <init>
+2017-10-06 18:06:18,000 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-49) In userSignIn
+2017-10-06 18:06:18,001 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-49) In getConnection
+2017-10-06 18:06:18,001 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-49) In userSignIn
+2017-10-06 18:06:18,002 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-49) In getConnection
+2017-10-06 18:06:18,004 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-49) In close
+2017-10-06 18:06:18,005 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-49) In close
+2017-10-06 18:06:18,006 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-49) In close
+2017-10-06 18:06:18,006 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-49) In endDBTransaction
+2017-10-06 18:06:18,006 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-49) In endDBTransaction
+2017-10-06 18:06:18,007 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-49) ---> createSession method in SessionUtility class
+2017-10-06 18:06:18,007 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-49) Printing the status of the session: 
+2017-10-06 18:06:19,251 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-51) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 18:06:19,252 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-51) --> getSession method in Sessionutility class
+2017-10-06 18:06:19,252 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-51) Printing the status of the session: 
+2017-10-06 18:06:19,252 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-51) In User Delegate------> getListOfFriends
+2017-10-06 18:06:19,252 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-51) In startDBTransaction
+2017-10-06 18:06:19,252 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-51) In setConnection
+2017-10-06 18:06:19,253 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-51) In getConnection
+2017-10-06 18:06:19,253 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-51) In <init>
+2017-10-06 18:06:19,253 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-51) In getConnection
+2017-10-06 18:06:19,253 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-51) In getTransactionDetails
+2017-10-06 18:06:19,254 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-51) In getConnection
+2017-10-06 18:06:19,254 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-51) In getConnection
+2017-10-06 18:06:19,291 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-51) In close
+2017-10-06 18:06:19,292 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-51) In close
+2017-10-06 18:06:19,292 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-51) In close
+2017-10-06 18:06:19,296 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-51) In endDBTransaction
+2017-10-06 18:06:19,298 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-51) Rolled Back on some exception....!!!
+2017-10-06 18:09:45,048 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-52) --> userSignUp method in UserResource class:: 
+2017-10-06 18:09:45,049 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-52) In User delegate--------->addNewUser
+2017-10-06 18:09:45,049 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-52) In startDBTransaction
+2017-10-06 18:09:45,050 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-52) In setConnection
+2017-10-06 18:09:45,051 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-52) In getConnection
+2017-10-06 18:09:45,051 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-52) In <init>
+2017-10-06 18:09:45,051 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-52) In userSignIn
+2017-10-06 18:09:45,052 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-52) In getConnection
+2017-10-06 18:09:45,052 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-52) In userSignIn
+2017-10-06 18:09:45,053 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-52) In getConnection
+2017-10-06 18:09:45,054 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-52) In close
+2017-10-06 18:09:45,054 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-52) In close
+2017-10-06 18:09:45,054 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-52) In close
+2017-10-06 18:09:45,054 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-52) In endDBTransaction
+2017-10-06 18:09:45,054 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-52) In endDBTransaction
+2017-10-06 18:09:45,055 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-52) ---> createSession method in SessionUtility class
+2017-10-06 18:09:45,055 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-52) Printing the status of the session: 
+2017-10-06 18:09:46,271 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-53) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 18:09:46,272 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-53) --> getSession method in Sessionutility class
+2017-10-06 18:09:46,272 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-53) Printing the status of the session: 
+2017-10-06 18:09:46,272 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-53) In User Delegate------> getListOfFriends
+2017-10-06 18:09:46,272 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-53) In startDBTransaction
+2017-10-06 18:09:46,273 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-53) In setConnection
+2017-10-06 18:09:46,274 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-53) In getConnection
+2017-10-06 18:09:46,274 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-53) In <init>
+2017-10-06 18:09:46,275 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-53) In getConnection
+2017-10-06 18:09:46,275 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-53) In getTransactionDetails
+2017-10-06 18:09:46,275 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-53) In getConnection
+2017-10-06 18:09:46,280 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-53) In close
+2017-10-06 18:09:46,280 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-53) In close
+2017-10-06 18:09:46,280 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-53) In close
+2017-10-06 18:09:46,284 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-53) In endDBTransaction
+2017-10-06 18:09:46,284 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-53) Rolled Back on some exception....!!!
+2017-10-06 18:12:46,034 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-54) --> userSignUp method in UserResource class:: 
+2017-10-06 18:12:46,037 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-54) In User delegate--------->addNewUser
+2017-10-06 18:12:46,037 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-54) In startDBTransaction
+2017-10-06 18:12:46,039 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-54) In setConnection
+2017-10-06 18:12:46,040 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-54) In getConnection
+2017-10-06 18:12:46,040 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-54) In <init>
+2017-10-06 18:12:46,040 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-54) In userSignIn
+2017-10-06 18:12:46,047 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-54) In getConnection
+2017-10-06 18:12:46,047 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-54) In userSignIn
+2017-10-06 18:12:46,047 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-54) In getConnection
+2017-10-06 18:12:46,050 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-54) In close
+2017-10-06 18:12:46,050 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-54) In close
+2017-10-06 18:12:46,050 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-54) In close
+2017-10-06 18:12:46,050 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-54) In endDBTransaction
+2017-10-06 18:12:46,050 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-54) In endDBTransaction
+2017-10-06 18:12:46,051 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-54) ---> createSession method in SessionUtility class
+2017-10-06 18:12:46,051 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-54) Printing the status of the session: 
+2017-10-06 18:12:47,254 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-55) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 18:12:47,255 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-55) --> getSession method in Sessionutility class
+2017-10-06 18:12:47,255 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-55) Printing the status of the session: 
+2017-10-06 18:12:47,255 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-55) In User Delegate------> getListOfFriends
+2017-10-06 18:12:47,255 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-55) In startDBTransaction
+2017-10-06 18:12:47,256 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-55) In setConnection
+2017-10-06 18:12:47,256 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-55) In getConnection
+2017-10-06 18:12:47,257 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-55) In <init>
+2017-10-06 18:12:47,257 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-55) In getConnection
+2017-10-06 18:12:47,258 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-55) In getTransactionDetails
+2017-10-06 18:12:47,258 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-55) In getConnection
+2017-10-06 18:12:47,259 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-55) In getConnection
+2017-10-06 18:12:47,262 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-55) In close
+2017-10-06 18:12:47,262 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-55) In close
+2017-10-06 18:12:47,262 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-55) In close
+2017-10-06 18:12:47,266 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-55) In endDBTransaction
+2017-10-06 18:12:47,266 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-55) Rolled Back on some exception....!!!
+2017-10-06 18:14:29,038 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-56) --> userSignUp method in UserResource class:: 
+2017-10-06 18:14:29,042 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-56) In User delegate--------->addNewUser
+2017-10-06 18:14:29,042 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-56) In startDBTransaction
+2017-10-06 18:14:29,044 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-56) In setConnection
+2017-10-06 18:14:29,045 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-56) In getConnection
+2017-10-06 18:14:29,045 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-56) In <init>
+2017-10-06 18:14:29,045 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-56) In userSignIn
+2017-10-06 18:14:29,047 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-56) In getConnection
+2017-10-06 18:14:29,047 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-56) In userSignIn
+2017-10-06 18:14:29,048 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-56) In getConnection
+2017-10-06 18:14:29,050 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-56) In close
+2017-10-06 18:14:29,050 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-56) In close
+2017-10-06 18:14:29,050 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-56) In close
+2017-10-06 18:14:29,050 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-56) In endDBTransaction
+2017-10-06 18:14:29,051 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-56) In endDBTransaction
+2017-10-06 18:14:29,051 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-56) ---> createSession method in SessionUtility class
+2017-10-06 18:14:29,051 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-56) Printing the status of the session: 
+2017-10-06 18:14:30,583 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-57) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 18:14:30,584 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-57) --> getSession method in Sessionutility class
+2017-10-06 18:14:30,584 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-57) Printing the status of the session: 
+2017-10-06 18:14:30,584 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-57) In User Delegate------> getListOfFriends
+2017-10-06 18:14:30,584 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-57) In startDBTransaction
+2017-10-06 18:14:30,585 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-57) In setConnection
+2017-10-06 18:14:30,585 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-57) In getConnection
+2017-10-06 18:14:30,585 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-57) In <init>
+2017-10-06 18:14:30,586 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-57) In getConnection
+2017-10-06 18:14:30,586 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-57) In getTransactionDetails
+2017-10-06 18:14:30,586 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-57) In getConnection
+2017-10-06 18:14:30,587 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-57) In getConnection
+2017-10-06 18:14:30,590 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-57) In close
+2017-10-06 18:14:30,590 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-57) In close
+2017-10-06 18:14:30,590 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-57) In close
+2017-10-06 18:14:30,590 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-57) In endDBTransaction
+2017-10-06 18:14:30,590 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-57) In endDBTransaction
+2017-10-06 18:18:38,240 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-60) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 18:18:38,240 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-61) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 18:18:38,240 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-60) --> getSession method in Sessionutility class
+2017-10-06 18:18:38,240 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-61) --> getSession method in Sessionutility class
+2017-10-06 18:18:38,240 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-60) Printing the status of the session: 
+2017-10-06 18:18:38,240 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-61) Printing the status of the session: 
+2017-10-06 18:18:38,240 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-60) In User Delegate------> getPendingRequests
+2017-10-06 18:18:38,240 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-60) In startDBTransaction
+2017-10-06 18:18:38,240 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-60) In setConnection
+2017-10-06 18:18:38,241 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-60) In getConnection
+2017-10-06 18:18:38,241 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-61) In User Delegate------> getListOfFriends
+2017-10-06 18:18:38,241 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-60) In <init>
+2017-10-06 18:18:38,241 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-61) In startDBTransaction
+2017-10-06 18:18:38,241 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-60) In getConnection
+2017-10-06 18:18:38,241 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-60) In getPendingRequests
+2017-10-06 18:18:38,241 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-60) In getConnection
+2017-10-06 18:18:38,242 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-60) In getConnection
+2017-10-06 18:18:38,244 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-60) In close
+2017-10-06 18:18:38,244 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-60) In close
+2017-10-06 18:18:38,244 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-60) In close
+2017-10-06 18:18:38,245 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-60) In endDBTransaction
+2017-10-06 18:18:38,245 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-60) In endDBTransaction
+2017-10-06 18:18:38,246 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-61) In setConnection
+2017-10-06 18:18:38,247 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-61) In getConnection
+2017-10-06 18:18:38,247 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-61) In <init>
+2017-10-06 18:18:38,247 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-61) In getConnection
+2017-10-06 18:18:38,247 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-61) In getListOfFriends
+2017-10-06 18:18:38,247 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-61) In getConnection
+2017-10-06 18:18:38,248 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-61) In getConnection
+2017-10-06 18:18:38,253 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-61) In close
+2017-10-06 18:18:38,253 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-61) In close
+2017-10-06 18:18:38,253 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-61) In close
+2017-10-06 18:18:38,254 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-61) In endDBTransaction
+2017-10-06 18:18:38,254 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-61) In endDBTransaction
+2017-10-06 18:18:43,702 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-63) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-06 18:18:43,702 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-63) --> getSession method in Sessionutility class
+2017-10-06 18:18:43,702 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-63) Printing the status of the session: 
+2017-10-06 18:18:43,703 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-63) In User Delegate------> getListOfFriends
+2017-10-06 18:18:43,703 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-63) In startDBTransaction
+2017-10-06 18:18:43,704 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-63) In setConnection
+2017-10-06 18:18:43,704 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-63) In getConnection
+2017-10-06 18:18:43,704 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-63) In <init>
+2017-10-06 18:18:43,704 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-63) In getConnection
+2017-10-06 18:18:43,704 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-63) In getTransactionDetails
+2017-10-06 18:18:43,704 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-63) In getConnection
+2017-10-06 18:18:43,706 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-63) In getConnection
+2017-10-06 18:18:43,707 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-63) In close
+2017-10-06 18:18:43,707 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-63) In close
+2017-10-06 18:18:43,707 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-63) In close
+2017-10-06 18:18:43,708 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-63) In endDBTransaction
+2017-10-06 18:18:43,708 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-63) In endDBTransaction

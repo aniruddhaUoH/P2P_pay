@@ -1,0 +1,48 @@
+<div style="padding-left: 280px; padding-top: 30px;">
+  <div class="well text-center" *ngIf="isVisible" style="margin-left: -100px; font-weight: bold;">
+    {{userMessage}}
+  </div>
+  <table id="t01">
+    <form #payForm="ngForm" (ngSubmit)="onClickToPay(payForm)" novalidate>
+    <tr>
+      <th colspan="2" style="text-align: center; font-size: large">Pay to Friend</th>
+    </tr>
+    <tr *ngFor="let userDetail of userDetails">
+      <td><span><i class="fa fa-google-wallet"></i> Wallet Balance:</span></td>
+      <td style="padding-left: 50px; font-weight: bold;"> Rs. {{userDetail.balance}}</td>
+    </tr>
+    <tr>
+      <td>Friend's Name</td>
+      <td>
+        <select name="username" style="width: 250px; height: 30px;" ngModel>
+          <option *ngFor="let friend of friends"  value={{friend.username}}>
+            {{friend.username}} - {{friend.email}}
+          </option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Amount To Pay</td>
+      <td>
+        <input type="text" style="width: 250px; height: 30px;" required name="withdrawl" #amountRef="ngModel" pattern="[0-9]*" ngModel/>
+        <div *ngIf="amountRef.errors && (amountRef.dirty || amountRef.touched)" class="alert alert-danger">
+          <div [hidden]="!amountRef.errors.required">
+            Amount is required
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Message</td>
+      <td>
+        <input type="text" style="width: 250px; height: 30px;" name="description" ngModel/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; padding: 5px;">
+        <button type="submit" [disabled]="!payForm.form.valid" class="btn btn-primary btn-lg" >Unload Wallet</button>
+      </td>
+    </tr>
+    </form>
+  </table>
+</div>

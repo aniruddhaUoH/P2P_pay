@@ -1,0 +1,47 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h3 style="margin-top: 8px;"><i class="fa fa-credit-card" style="font-size:30px; color: #c2e59c"></i><span style="color: white;"> P2P</span><span class="glyphicon glyphicon-tint" style="color: #c2e59c">
+        </span><span style="color: white">Pay</span></h3>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><button class="btn btn-link" (click)="logout()" style="margin-top: 7px;"><span class="glyphicon glyphicon-log-in"></span> LogOut</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-2 sidenav" style="height: 800px;">
+      <ul class="nav nav-pills nav-stacked" style="color: #1b1e24">
+        <li><a routerLink="/app-home/app-profile">View Profile</a></li>
+        <li><a routerLink="/app-home/app-pay" routerLinkActive="active">Pay</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Wallet <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/app-home/app-load-money" routerLinkActive="active">Load Money</a></li>
+            <li><a routerLink="/app-home/app-unload-money" routerLinkActive="active">Unload Money</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Networks <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/app-home/app-invite" routerLinkActive="active">Invite friends</a></li>
+            <li><a routerLink="/app-home/app-list" routerLinkActive="active">List of friends</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="/app-home/app-account" routerLinkActive="active">Account Summary</a></li>
+      </ul><br>
+    </div>
+
+    <div class="col-sm-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p style="text-align: center; font-weight: bold; font-size: larger; margin-top: 10px;">
+    <span style="color: whitesmoke;">Created by:</span> Aniruddha Biswas</p>
+</footer>

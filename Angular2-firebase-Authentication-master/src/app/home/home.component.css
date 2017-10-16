@@ -1,0 +1,48 @@
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: #c2e59c;
+  height: 100%;
+  padding: 15px;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #64b3f4;
+  color: black;
+  padding: 12px;
+  opacity: 0.8;
+}
+.navbar-inverse{
+  background: #c2e59c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;}
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 570px}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: black;
+}
+
+a {
+  color: #000;
+}
+.navbar-inverse .btn-link {
+  color: #000;
+}

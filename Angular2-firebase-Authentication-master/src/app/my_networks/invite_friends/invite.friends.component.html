@@ -1,0 +1,39 @@
+<form class="form-inline" #searchForm="ngForm" (ngSubmit)="onSearch(searchForm.value)" novalidate>
+  <div class="form-group">
+  <label style="font-size: x-large; font-weight: normal">Search for Friends: </label>
+    <div class="input-group">
+      <input type="text" class="form-control" size="40px" style="height: 46px;" required name="friendName" placeholder="Friend's Name" ngModel/>
+      <div class="input-group-btn">
+        <button class="btn btn-info btn-lg" type="submit" [disabled]="!searchForm.form.valid">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+<hr/>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" style="font-size: x-large;">Suggestions of friends</th>
+    </tr>
+  </thead>
+  <tbody>
+    <div *ngIf="length == 0">
+      <h4 style="text-align: center;"> No matches found...</h4>
+    </div>
+    <tr *ngFor="let searchFriend of searchFriends">
+      <td style="font-size: large">{{searchFriend.username}}</td>
+      <td *ngIf="searchFriend.status === 2">
+        <button type="button" class="btn btn-primary" style="float: right;" (click)="onSendRequest(searchFriend)">Send Invitation</button>
+      </td>
+      <td *ngIf="searchFriend.status === 0">
+        <h4 style="float: right;">Request sent</h4>
+      </td>
+      <td *ngIf="searchFriend.status === 1">
+        <h4 style="float: right;">Friend</h4>
+      </td>
+    </tr>
+  </tbody>
+</table>

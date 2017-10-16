@@ -1,0 +1,32 @@
+<div style="padding-left: 220px;">
+  <table id="t01">
+    <tr>
+      <h3 style="font-weight: bold;">Pending Requests</h3>
+    </tr>
+    <div *ngIf="length == 0">
+      <h4>No pending request is there...</h4>
+    </div>
+    <tr *ngFor="let request of requests">
+      <td>{{request.username}}</td>
+      <td style="float: right">
+        <button type="button" class="btn btn-success" (click)="onRequestAccept(request.username)">Accept</button>
+        <button type="button" class="btn btn-danger" (click)="onRequestReject(request.username)" >Reject</button>
+      </td>
+    </tr>
+  </table>
+</div>
+<hr/>
+
+<table class="table-fill">
+  <thead>
+    <tr>
+      <th colspan="2" style="text-align: center;">List of Friends</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let friend of friends">
+      <td width="40%">{{friend.username}}</td>
+      <td width="60%">{{friend.email}}</td>
+    </tr>
+  </tbody>
+</table>

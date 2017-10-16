@@ -1,0 +1,47 @@
+<div *ngFor="let userDetail of userDetails">
+  <h3><i class="fa fa-google-wallet"></i> Wallet Balance: Rs.{{userDetail.balance}}</h3>
+  <hr/>
+</div>
+
+<table id="t01">
+  <tr *ngFor="let inboundTransaction of inboundTransactions">
+    <th>No. of Inbound Pay:</th>
+    <td>{{inboundTransaction.noOfInbound}}</td>
+    <th>Total Amount:</th>
+    <td>   Rs.{{inboundTransaction.totalDeposit}}</td>
+  </tr>
+  <tr *ngFor="let outboundTransaction of outboundTransactions">
+    <th>No. of Outbound Pay:</th>
+    <td>{{outboundTransaction.noOfOutbound}}</td>
+    <th>Total Amount:</th>
+    <td>   Rs.{{outboundTransaction.totalWithdrawl}}</td>
+  </tr>
+</table>
+<hr/>
+
+<div class="table-users">
+  <div class="header">Transaction Summary</div>
+
+  <table cellspacing="0" *ngIf="transactions">
+    <tr>
+      <th style="text-align: center">Merchant Name</th>
+      <th style="text-align: center">Date & Time</th>
+      <th style="text-align: center">Withdraw</th>
+      <th style="text-align: center">Deposit</th>
+      <th style="text-align: center">Comments</th>
+    </tr>
+
+    <tr *ngFor="let transaction of transactions; let j=index">
+      <td>{{transaction.merchant}}</td>
+      <td>{{dateArray[j]}}</td>
+      <td>{{transaction.withdrawl}}</td>
+      <td>{{transaction.deposit}}</td>
+      <td>{{transaction.description}}</td>
+    </tr>
+  </table>
+  <ul class="pagination" style="margin-left: 184px;">
+    <li (click)="loadTransactionList([(currentPage)]-1)"><a>Previous</a></li>
+    <li style="word-spacing: 20px; display: inline;" *ngFor="let num of paginationArrayForTransaction" (click)="loadTransactionList(num)"><a>{{num}}</a></li>
+    <li (click)="onPaginationNext([(currentPage)])"><a>Next</a></li>
+  </ul>
+</div>

@@ -1,0 +1,55 @@
+<div class="container">
+  <h1 class="page-header" style="padding-left: 50px;">Profile Details</h1>
+  <div class="row">
+    <!-- left column -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="text-center">
+        <img src="{{user.auth.photoURL}}" class="img-thumbnail">
+      </div>
+      <h3 style="padding-left: 71px;">{{user.auth.displayName}}</h3>
+    </div>
+    <!-- edit form column -->
+    <div class="col-md-8 col-sm-6 col-xs-12 personal-info" style="padding-left: 100px;">
+      <table id="t01" *ngFor="let userDetail of userDetails">
+        <!--<form #userForm="ngForm" (ngSubmit)="onSaveDetails(userForm.value)">-->
+        <form #userForm="ngForm" (ngSubmit)="onSaveDetails(userForm.value)" novalidate>
+          <tr>
+            <th colspan="2" style="text-align: center;">Personal Info</th>
+          </tr>
+          <tr>
+            <td style="font-weight: bold;">Email</td>
+            <td>{{user.auth.email}}</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold;">Phone</td>
+            <td>
+              <input type="text" *ngIf="editMode" required name="phone" #phoneRef="ngModel" pattern="[0-9]*" ngModel/>
+              {{userDetail.phone}}
+            </td>
+          </tr>
+          <tr *ngIf="showMode">
+            <td style="font-weight: bold;">Gender</td>
+            <td style="padding-left: 16px;">{{userDetail.gender}}</td>
+          </tr>
+          <tr *ngIf="editMode">
+            <td style="font-weight: bold;">Gender</td>
+            <td>
+              <input type="radio" [(ngModel)]="gender.type" name="type" value="Male"/>Male
+              <input type="radio" [(ngModel)]="gender.type" name="type" value="Female"/>Female
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="btn btn-primary"
+                    (click)="edit()"><span class="glyphicon glyphicon-pencil"></span> Edit Details</button>
+            </td>
+            <td>
+              <button class="btn btn-primary" [disabled]="!userForm.form.valid" *ngIf="saveMode" type="submit" (click)="onRefresh()"><span></span> Save Details</button>
+            </td>
+          </tr>
+        </form>
+      </table>
+    </div>
+  </div>
+</div>
+

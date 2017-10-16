@@ -1,0 +1,1340 @@
+2017-10-11 12:18:12,740 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) In MailtoSend Delegate
+2017-10-11 12:18:12,741 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In startDBTransaction
+2017-10-11 12:18:12,755 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In setConnection
+2017-10-11 12:18:12,756 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In getConnection
+2017-10-11 12:18:12,757 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In <init>
+2017-10-11 12:18:12,757 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-4-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 12:18:12,759 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In getConnection
+2017-10-11 12:18:12,759 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-4-thread-1) In mail to Vendor DAO
+2017-10-11 12:18:12,826 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-4-thread-1) SQLException in mailToVendorDao Column 'mailStatus' not found.: java.sql.SQLException: Column 'mailStatus' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1077)
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2567)
+	at org.jboss.jca.adapters.jdbc.WrappedResultSet.getInt(WrappedResultSet.java:1521)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:563)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:22)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 12:18:12,826 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 12:18:12,827 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 12:18:12,827 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 12:18:12,827 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (pool-4-thread-1) Exception in mailToVendorBo null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:579)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:22)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 12:18:12,828 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) Exception in MAiltoSend null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:112)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:22)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 12:18:12,829 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 12:18:12,829 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) Rolled Back on some exception....!!!
+2017-10-11 12:18:12,829 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) No transaction done In Last 5 Hours
+2017-10-11 12:21:13,920 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-8-thread-1) In MailtoSend Delegate
+2017-10-11 12:21:13,931 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In startDBTransaction
+2017-10-11 12:21:13,936 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In setConnection
+2017-10-11 12:21:13,937 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In getConnection
+2017-10-11 12:21:13,937 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-8-thread-1) In <init>
+2017-10-11 12:21:13,937 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-8-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 12:21:13,948 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-8-thread-1) In getConnection
+2017-10-11 12:21:13,949 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-8-thread-1) In mail to Vendor DAO
+2017-10-11 12:21:13,958 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 12:21:13,958 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 12:21:13,959 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 12:21:13,959 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In endDBTransaction
+2017-10-11 12:21:13,959 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In endDBTransaction
+2017-10-11 12:21:13,960 DEBUG [com.alacriti.p2p.util.MailingService] (pool-8-thread-1) in Mail sending method
+2017-10-11 12:21:13,989 ERROR [com.alacriti.p2p.util.MailingService] (pool-8-thread-1) Exception occured : javax.mail.internet.AddressException: Local address contains control or whitespace in string ``Rahul Verma''
+	at javax.mail.internet.InternetAddress.checkAddress(InternetAddress.java:1239)
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:1099)
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:638)
+	at javax.mail.internet.InternetAddress.<init>(InternetAddress.java:111)
+	at com.alacriti.p2p.util.MailingService.send(MailingService.java:35)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:32)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 12:23:19,240 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-10-thread-1) In MailtoSend Delegate
+2017-10-11 12:23:19,240 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In startDBTransaction
+2017-10-11 12:23:19,242 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In setConnection
+2017-10-11 12:23:19,242 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In getConnection
+2017-10-11 12:23:19,242 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-10-thread-1) In <init>
+2017-10-11 12:23:19,242 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-10-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 12:23:19,245 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-10-thread-1) In getConnection
+2017-10-11 12:23:19,245 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-10-thread-1) In mail to Vendor DAO
+2017-10-11 12:23:19,260 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-10-thread-1) In close
+2017-10-11 12:23:19,261 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-10-thread-1) In close
+2017-10-11 12:23:19,261 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-10-thread-1) In close
+2017-10-11 12:23:19,262 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In endDBTransaction
+2017-10-11 12:23:19,262 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In endDBTransaction
+2017-10-11 12:23:19,262 DEBUG [com.alacriti.p2p.util.MailingService] (pool-10-thread-1) in Mail sending method
+2017-10-11 12:23:19,272 ERROR [com.alacriti.p2p.util.MailingService] (pool-10-thread-1) Exception occured : javax.mail.internet.AddressException: Local address contains control or whitespace in string ``Rahul Verma''
+	at javax.mail.internet.InternetAddress.checkAddress(InternetAddress.java:1239)
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:1099)
+	at javax.mail.internet.InternetAddress.parse(InternetAddress.java:638)
+	at javax.mail.internet.InternetAddress.<init>(InternetAddress.java:111)
+	at com.alacriti.p2p.util.MailingService.send(MailingService.java:35)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:34)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 12:26:09,587 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-12-thread-1) In MailtoSend Delegate
+2017-10-11 12:26:09,587 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In startDBTransaction
+2017-10-11 12:26:09,588 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In setConnection
+2017-10-11 12:26:09,589 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In getConnection
+2017-10-11 12:26:09,589 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-12-thread-1) In <init>
+2017-10-11 12:26:09,589 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-12-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 12:26:09,591 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-12-thread-1) In getConnection
+2017-10-11 12:26:09,591 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-12-thread-1) In mail to Vendor DAO
+2017-10-11 12:26:09,594 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-12-thread-1) In close
+2017-10-11 12:26:09,594 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-12-thread-1) In close
+2017-10-11 12:26:09,595 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-12-thread-1) In close
+2017-10-11 12:26:09,595 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In endDBTransaction
+2017-10-11 12:26:09,595 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In endDBTransaction
+2017-10-11 12:26:09,596 DEBUG [com.alacriti.p2p.util.MailingService] (pool-12-thread-1) in Mail sending method
+2017-10-11 12:26:13,958 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-12-thread-1) In Mail Sent Delegate
+2017-10-11 12:26:13,959 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In startDBTransaction
+2017-10-11 12:26:13,959 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In setConnection
+2017-10-11 12:26:13,960 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In getConnection
+2017-10-11 12:26:13,960 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-12-thread-1) In <init>
+2017-10-11 12:26:13,960 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-12-thread-1) In Mail 
+2017-10-11 12:26:13,961 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-12-thread-1) In getConnection
+2017-10-11 12:26:13,961 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-12-thread-1) In Mail Sent DAO
+2017-10-11 12:26:13,962 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-12-thread-1) In close
+2017-10-11 12:26:13,963 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In endDBTransaction
+2017-10-11 12:26:13,970 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In endDBTransaction
+2017-10-11 12:26:14,015 DEBUG [com.alacriti.p2p.util.MailingService] (pool-12-thread-1) in Mail sending method
+2017-10-11 12:26:17,103 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-12-thread-1) In Mail Sent Delegate
+2017-10-11 12:26:17,103 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In startDBTransaction
+2017-10-11 12:26:17,104 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In setConnection
+2017-10-11 12:26:17,104 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In getConnection
+2017-10-11 12:26:17,104 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-12-thread-1) In <init>
+2017-10-11 12:26:17,105 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-12-thread-1) In Mail 
+2017-10-11 12:26:17,105 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-12-thread-1) In getConnection
+2017-10-11 12:26:17,105 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-12-thread-1) In Mail Sent DAO
+2017-10-11 12:26:17,106 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-12-thread-1) In close
+2017-10-11 12:26:17,107 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In endDBTransaction
+2017-10-11 12:26:17,107 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In endDBTransaction
+2017-10-11 13:08:58,027 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) In MailtoSend Delegate
+2017-10-11 13:08:58,027 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In startDBTransaction
+2017-10-11 13:08:58,035 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In setConnection
+2017-10-11 13:08:58,038 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In getConnection
+2017-10-11 13:08:58,039 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In <init>
+2017-10-11 13:08:58,039 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-4-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 13:08:58,044 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In getConnection
+2017-10-11 13:08:58,045 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-4-thread-1) In mail to Vendor DAO
+2017-10-11 13:08:58,083 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-4-thread-1) SQLException in mailToVendorDao Before start of result set: java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5212)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5135)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5174)
+	at org.jboss.jca.adapters.jdbc.WrappedResultSet.getString(WrappedResultSet.java:1985)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:567)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:08:58,088 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 13:08:58,089 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 13:08:58,090 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 13:08:58,090 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (pool-4-thread-1) Exception in mailToVendorBo null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:584)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:08:58,090 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) Exception in MAiltoSend null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:112)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:08:58,092 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 13:08:58,094 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) Rolled Back on some exception....!!!
+2017-10-11 13:08:58,094 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) No transaction done In Last 5 Hours
+2017-10-11 13:11:28,864 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-8-thread-1) In MailtoSend Delegate
+2017-10-11 13:11:28,865 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In startDBTransaction
+2017-10-11 13:11:28,866 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In setConnection
+2017-10-11 13:11:28,867 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In getConnection
+2017-10-11 13:11:28,867 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-8-thread-1) In <init>
+2017-10-11 13:11:28,867 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-8-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 13:11:28,869 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-8-thread-1) In getConnection
+2017-10-11 13:11:28,869 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-8-thread-1) In mail to Vendor DAO
+2017-10-11 13:11:28,876 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-8-thread-1) SQLException in mailToTransactionDao Before start of result set: java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5212)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5135)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5174)
+	at org.jboss.jca.adapters.jdbc.WrappedResultSet.getString(WrappedResultSet.java:1985)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:568)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:11:28,878 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 13:11:28,878 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 13:11:28,879 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 13:11:28,879 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (pool-8-thread-1) Exception in mailToVendorBo null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:585)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:11:28,879 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-8-thread-1) Exception in MAiltoSend null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:112)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:11:28,880 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In endDBTransaction
+2017-10-11 13:11:28,880 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) Rolled Back on some exception....!!!
+2017-10-11 13:11:28,881 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-8-thread-1) No transaction done In Last 5 Hours
+2017-10-11 13:12:39,144 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-10-thread-1) In MailtoSend Delegate
+2017-10-11 13:12:39,144 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In startDBTransaction
+2017-10-11 13:12:39,149 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In setConnection
+2017-10-11 13:12:39,151 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In getConnection
+2017-10-11 13:12:39,152 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-10-thread-1) In <init>
+2017-10-11 13:12:39,152 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-10-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 13:12:39,154 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-10-thread-1) In getConnection
+2017-10-11 13:12:39,154 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-10-thread-1) In mail to Vendor DAO
+2017-10-11 13:12:39,166 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-10-thread-1) SQLException in mailToTransactionDao Before start of result set: java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5212)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5135)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5174)
+	at org.jboss.jca.adapters.jdbc.WrappedResultSet.getString(WrappedResultSet.java:1985)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:568)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:12:39,167 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-10-thread-1) In close
+2017-10-11 13:12:39,168 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-10-thread-1) In close
+2017-10-11 13:12:39,168 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-10-thread-1) In close
+2017-10-11 13:12:39,169 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (pool-10-thread-1) Exception in mailToVendorBo null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:585)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:12:39,169 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-10-thread-1) Exception in MAiltoSend null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:112)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:12:39,169 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In endDBTransaction
+2017-10-11 13:12:39,170 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) Rolled Back on some exception....!!!
+2017-10-11 13:12:39,170 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-10-thread-1) No transaction done In Last 5 Hours
+2017-10-11 13:14:04,411 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-12-thread-1) In MailtoSend Delegate
+2017-10-11 13:14:04,411 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In startDBTransaction
+2017-10-11 13:14:04,412 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In setConnection
+2017-10-11 13:14:04,418 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In getConnection
+2017-10-11 13:14:04,418 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-12-thread-1) In <init>
+2017-10-11 13:14:04,418 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-12-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 13:14:04,422 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-12-thread-1) In getConnection
+2017-10-11 13:14:04,423 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-12-thread-1) In mail to Vendor DAO
+2017-10-11 13:14:04,431 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-12-thread-1) SQLException in mailToTransactionDao Before start of result set: java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5212)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5135)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5174)
+	at org.jboss.jca.adapters.jdbc.WrappedResultSet.getString(WrappedResultSet.java:1985)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:568)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:14:04,432 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-12-thread-1) In close
+2017-10-11 13:14:04,432 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-12-thread-1) In close
+2017-10-11 13:14:04,432 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-12-thread-1) In close
+2017-10-11 13:14:04,432 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (pool-12-thread-1) Exception in mailToVendorBo null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:586)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:14:04,433 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-12-thread-1) Exception in MAiltoSend null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:112)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:14:04,433 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) In endDBTransaction
+2017-10-11 13:14:04,434 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-12-thread-1) Rolled Back on some exception....!!!
+2017-10-11 13:14:04,434 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-12-thread-1) No transaction done In Last 5 Hours
+2017-10-11 13:15:54,660 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-14-thread-1) In MailtoSend Delegate
+2017-10-11 13:15:54,661 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-14-thread-1) In startDBTransaction
+2017-10-11 13:15:54,661 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-14-thread-1) In setConnection
+2017-10-11 13:15:54,663 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-14-thread-1) In getConnection
+2017-10-11 13:15:54,664 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-14-thread-1) In <init>
+2017-10-11 13:15:54,664 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-14-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 13:15:54,665 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-14-thread-1) In getConnection
+2017-10-11 13:15:54,665 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-14-thread-1) In mail to Vendor DAO
+2017-10-11 13:15:54,668 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-14-thread-1) SQLException in mailToTransactionDao Before start of result set: java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5212)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5135)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5174)
+	at org.jboss.jca.adapters.jdbc.WrappedResultSet.getString(WrappedResultSet.java:1985)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:570)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:15:54,669 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-14-thread-1) In close
+2017-10-11 13:15:54,669 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-14-thread-1) In close
+2017-10-11 13:15:54,669 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-14-thread-1) In close
+2017-10-11 13:15:54,670 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (pool-14-thread-1) Exception in mailToVendorBo null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:588)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:15:54,670 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-14-thread-1) Exception in MAiltoSend null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:112)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:15:54,670 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-14-thread-1) In endDBTransaction
+2017-10-11 13:15:54,670 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-14-thread-1) Rolled Back on some exception....!!!
+2017-10-11 13:15:54,671 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-14-thread-1) No transaction done In Last 5 Hours
+2017-10-11 13:16:49,844 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-16-thread-1) In MailtoSend Delegate
+2017-10-11 13:16:49,844 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-16-thread-1) In startDBTransaction
+2017-10-11 13:16:49,847 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-16-thread-1) In setConnection
+2017-10-11 13:16:49,851 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-16-thread-1) In getConnection
+2017-10-11 13:16:49,851 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-16-thread-1) In <init>
+2017-10-11 13:16:49,851 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-16-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 13:16:49,853 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-16-thread-1) In getConnection
+2017-10-11 13:16:49,853 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-16-thread-1) In mail to Vendor DAO
+2017-10-11 13:16:49,855 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-16-thread-1) SQLException in mailToTransactionDao Before start of result set: java.sql.SQLException: Before start of result set
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.checkRowPos(ResultSetImpl.java:790)
+	at com.mysql.jdbc.ResultSetImpl.getStringInternal(ResultSetImpl.java:5212)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5135)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5174)
+	at org.jboss.jca.adapters.jdbc.WrappedResultSet.getString(WrappedResultSet.java:1985)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:569)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:16:49,856 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-16-thread-1) In close
+2017-10-11 13:16:49,857 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-16-thread-1) In close
+2017-10-11 13:16:49,857 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-16-thread-1) In close
+2017-10-11 13:16:49,857 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (pool-16-thread-1) Exception in mailToVendorBo null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.mailToSend(TransactionDAO.java:588)
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:109)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:16:49,857 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-16-thread-1) Exception in MAiltoSend null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.mailToSend(TransactionBO.java:112)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.mailToSend(TransactionDelegate.java:146)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:23)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:16:49,858 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-16-thread-1) In endDBTransaction
+2017-10-11 13:16:49,858 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-16-thread-1) Rolled Back on some exception....!!!
+2017-10-11 13:16:49,858 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-16-thread-1) No transaction done In Last 5 Hours
+2017-10-11 13:18:50,098 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-18-thread-1) In MailtoSend Delegate
+2017-10-11 13:18:50,098 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-18-thread-1) In startDBTransaction
+2017-10-11 13:18:50,099 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-18-thread-1) In setConnection
+2017-10-11 13:18:50,104 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-18-thread-1) In getConnection
+2017-10-11 13:18:50,104 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-18-thread-1) In <init>
+2017-10-11 13:18:50,105 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-18-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 13:18:50,106 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-18-thread-1) In getConnection
+2017-10-11 13:18:50,106 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-18-thread-1) In mail to Vendor DAO
+2017-10-11 13:18:50,113 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-18-thread-1) In close
+2017-10-11 13:18:50,113 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-18-thread-1) In close
+2017-10-11 13:18:50,113 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-18-thread-1) In close
+2017-10-11 13:18:50,113 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-18-thread-1) In endDBTransaction
+2017-10-11 13:18:50,113 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-18-thread-1) In endDBTransaction
+2017-10-11 13:18:50,114 DEBUG [com.alacriti.p2p.util.MailingService] (pool-18-thread-1) in Mail sending method
+2017-10-11 13:18:52,174 ERROR [com.alacriti.p2p.util.MailingService] (pool-18-thread-1) Exception occured : javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials i29sm5890008ioo.31 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:388)
+	at javax.mail.Service.connect(Service.java:246)
+	at javax.mail.Service.connect(Service.java:195)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.alacriti.p2p.util.MailingService.send(MailingService.java:39)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:36)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:20:35,356 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-20-thread-1) In MailtoSend Delegate
+2017-10-11 13:20:35,356 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-20-thread-1) In startDBTransaction
+2017-10-11 13:20:35,357 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-20-thread-1) In setConnection
+2017-10-11 13:20:35,362 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-20-thread-1) In getConnection
+2017-10-11 13:20:35,362 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-20-thread-1) In <init>
+2017-10-11 13:20:35,362 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-20-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 13:20:35,364 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-20-thread-1) In getConnection
+2017-10-11 13:20:35,364 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-20-thread-1) In mail to Vendor DAO
+2017-10-11 13:20:35,374 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-20-thread-1) In close
+2017-10-11 13:20:35,375 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-20-thread-1) In close
+2017-10-11 13:20:35,375 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-20-thread-1) In close
+2017-10-11 13:20:35,375 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-20-thread-1) In endDBTransaction
+2017-10-11 13:20:35,375 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-20-thread-1) In endDBTransaction
+2017-10-11 13:20:35,376 DEBUG [com.alacriti.p2p.util.MailingService] (pool-20-thread-1) in Mail sending method
+2017-10-11 13:20:37,108 ERROR [com.alacriti.p2p.util.MailingService] (pool-20-thread-1) Exception occured : javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbvW
+534-5.7.14 IsnPcaOQSa1IVcRyTrWUj3KqnK036RDgiseP4PumRh_-hOHNvcmqEfPQb65vJU4XRCtxxT
+534-5.7.14 wif5cwVNtGfPbJ2RS40iTeb_fkWcD8fyK9seVO2v8yxI2xd8wrmIDsnz8ZSgEkFeuq2rIJ
+534-5.7.14 gNIa1OpJkWWtSyznfyQcuSq-PrbBDJtQSU15xDuDcQTL6U-czL4Ehtr8Tx-1UETMNnJiYf
+534-5.7.14 p5bFdmG2NmXsxJ-x36hqKJ1W1Wbko> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 f77sm3580025ioe.64 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:914)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:825)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:730)
+	at javax.mail.Service.connect(Service.java:388)
+	at javax.mail.Service.connect(Service.java:246)
+	at javax.mail.Service.connect(Service.java:195)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.alacriti.p2p.util.MailingService.send(MailingService.java:39)
+	at com.alacriti.p2p.util.TimeForDaemonProcess.run(TimeForDaemonProcess.java:36)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-11 13:24:50,762 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-22-thread-1) In MailtoSend Delegate
+2017-10-11 13:24:50,763 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In startDBTransaction
+2017-10-11 13:24:50,764 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In setConnection
+2017-10-11 13:24:50,764 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In getConnection
+2017-10-11 13:24:50,765 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-22-thread-1) In <init>
+2017-10-11 13:24:50,765 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-22-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 13:24:50,766 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-22-thread-1) In getConnection
+2017-10-11 13:24:50,767 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-22-thread-1) In mail to Vendor DAO
+2017-10-11 13:24:50,777 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-22-thread-1) In close
+2017-10-11 13:24:50,777 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-22-thread-1) In close
+2017-10-11 13:24:50,777 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-22-thread-1) In close
+2017-10-11 13:24:50,777 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In endDBTransaction
+2017-10-11 13:24:50,777 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In endDBTransaction
+2017-10-11 13:24:50,778 DEBUG [com.alacriti.p2p.util.MailingService] (pool-22-thread-1) in Mail sending method
+2017-10-11 13:24:54,500 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-22-thread-1) In Mail Sent Delegate
+2017-10-11 13:24:54,501 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In startDBTransaction
+2017-10-11 13:24:54,501 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In setConnection
+2017-10-11 13:24:54,501 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In getConnection
+2017-10-11 13:24:54,502 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-22-thread-1) In <init>
+2017-10-11 13:24:54,502 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-22-thread-1) In Mail 
+2017-10-11 13:24:54,502 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-22-thread-1) In getConnection
+2017-10-11 13:24:54,502 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-22-thread-1) In Mail Sent DAO
+2017-10-11 13:24:54,504 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-22-thread-1) In close
+2017-10-11 13:24:54,505 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In endDBTransaction
+2017-10-11 13:24:54,505 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In endDBTransaction
+2017-10-11 13:24:54,535 DEBUG [com.alacriti.p2p.util.MailingService] (pool-22-thread-1) in Mail sending method
+2017-10-11 13:24:58,216 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-22-thread-1) In Mail Sent Delegate
+2017-10-11 13:24:58,216 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In startDBTransaction
+2017-10-11 13:24:58,216 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In setConnection
+2017-10-11 13:24:58,217 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In getConnection
+2017-10-11 13:24:58,217 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-22-thread-1) In <init>
+2017-10-11 13:24:58,217 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-22-thread-1) In Mail 
+2017-10-11 13:24:58,217 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-22-thread-1) In getConnection
+2017-10-11 13:24:58,217 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-22-thread-1) In Mail Sent DAO
+2017-10-11 13:24:58,218 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-22-thread-1) In close
+2017-10-11 13:24:58,218 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In endDBTransaction
+2017-10-11 13:24:58,218 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-22-thread-1) In endDBTransaction
+2017-10-11 14:58:53,274 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) In MailtoSend Delegate
+2017-10-11 14:58:53,275 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In startDBTransaction
+2017-10-11 14:58:53,282 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In setConnection
+2017-10-11 14:58:53,294 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In getConnection
+2017-10-11 14:58:53,295 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In <init>
+2017-10-11 14:58:53,296 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-4-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 14:58:53,302 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In getConnection
+2017-10-11 14:58:53,303 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-4-thread-1) In mail to Vendor DAO
+2017-10-11 14:58:53,331 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 14:58:53,333 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 14:58:53,334 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 14:58:53,335 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 14:58:53,336 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 14:58:53,338 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) No transaction done In Last 5 Hours
+2017-10-11 15:00:05,586 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-2) --> userSignUp method in UserResource class:: 
+2017-10-11 15:00:05,634 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-2) In User delegate--------->addNewUser
+2017-10-11 15:00:05,635 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In startDBTransaction
+2017-10-11 15:00:05,635 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In setConnection
+2017-10-11 15:00:05,636 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In getConnection
+2017-10-11 15:00:05,636 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In <init>
+2017-10-11 15:00:05,636 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-2) In userSignIn
+2017-10-11 15:00:05,637 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In getConnection
+2017-10-11 15:00:05,637 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-2) In userSignIn
+2017-10-11 15:00:05,638 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In getConnection
+2017-10-11 15:00:05,639 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-11 15:00:05,640 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-11 15:00:05,640 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-11 15:00:05,640 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-11 15:00:05,640 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-11 15:00:05,641 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-2) ---> createSession method in SessionUtility class
+2017-10-11 15:00:05,642 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-2) Printing the status of the session: 
+2017-10-11 15:00:24,510 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-4) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:00:24,511 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-4) --> getSession method in Sessionutility class
+2017-10-11 15:00:24,516 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-4) Printing the status of the session: 
+2017-10-11 15:00:24,516 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-4) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:00:24,517 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In startDBTransaction
+2017-10-11 15:00:24,518 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In setConnection
+2017-10-11 15:00:24,518 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In getConnection
+2017-10-11 15:00:24,519 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-4) In <init>
+2017-10-11 15:00:24,520 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-4) In unloadMoneyFromWallet
+2017-10-11 15:00:24,520 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-4) In getConnection
+2017-10-11 15:00:24,521 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-4) In unloadMoneyFromWallet
+2017-10-11 15:00:24,522 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In getConnection
+2017-10-11 15:00:24,526 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In getConnection
+2017-10-11 15:00:24,528 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In getConnection
+2017-10-11 15:00:24,530 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-11 15:00:24,531 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-11 15:00:24,531 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-11 15:00:24,532 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In endDBTransaction
+2017-10-11 15:00:24,532 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In endDBTransaction
+2017-10-11 15:39:56,857 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-8-thread-1) In MailtoSend Delegate
+2017-10-11 15:39:56,862 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In startDBTransaction
+2017-10-11 15:39:56,864 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In setConnection
+2017-10-11 15:39:56,865 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In getConnection
+2017-10-11 15:39:56,865 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-8-thread-1) In <init>
+2017-10-11 15:39:56,865 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-8-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 15:39:56,867 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-8-thread-1) In getConnection
+2017-10-11 15:39:56,867 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-8-thread-1) In mail to Vendor DAO
+2017-10-11 15:39:56,869 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 15:39:56,869 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 15:39:56,869 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 15:39:56,869 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In endDBTransaction
+2017-10-11 15:39:56,869 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In endDBTransaction
+2017-10-11 15:39:56,870 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-8-thread-1) No transaction done In Last 5 Hours
+2017-10-11 15:40:41,757 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-8) --> userSignUp method in UserResource class:: 
+2017-10-11 15:40:41,759 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-8) In User delegate--------->addNewUser
+2017-10-11 15:40:41,760 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In startDBTransaction
+2017-10-11 15:40:41,761 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In setConnection
+2017-10-11 15:40:41,761 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In getConnection
+2017-10-11 15:40:41,762 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-8) In <init>
+2017-10-11 15:40:41,762 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-8) In userSignIn
+2017-10-11 15:40:41,764 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-8) In getConnection
+2017-10-11 15:40:41,764 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-8) In userSignIn
+2017-10-11 15:40:41,765 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In getConnection
+2017-10-11 15:40:41,767 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In close
+2017-10-11 15:40:41,768 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In close
+2017-10-11 15:40:41,768 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In close
+2017-10-11 15:40:41,769 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In endDBTransaction
+2017-10-11 15:40:41,769 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In endDBTransaction
+2017-10-11 15:40:41,772 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-8) ---> createSession method in SessionUtility class
+2017-10-11 15:40:41,772 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-8) Printing the status of the session: 
+2017-10-11 15:41:55,356 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-10) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:41:55,359 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-10) --> getSession method in Sessionutility class
+2017-10-11 15:41:55,359 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-10) Printing the status of the session: 
+2017-10-11 15:41:55,359 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-10) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:41:55,359 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In startDBTransaction
+2017-10-11 15:41:55,360 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In setConnection
+2017-10-11 15:41:55,360 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In getConnection
+2017-10-11 15:41:55,360 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-10) In <init>
+2017-10-11 15:41:55,360 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-10) In unloadMoneyFromWallet
+2017-10-11 15:41:55,361 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-10) In getConnection
+2017-10-11 15:41:55,361 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-10) In unloadMoneyFromWallet
+2017-10-11 15:41:55,362 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In getConnection
+2017-10-11 15:41:55,363 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In getConnection
+2017-10-11 15:41:55,368 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In getConnection
+2017-10-11 15:41:55,369 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In close
+2017-10-11 15:41:55,370 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In close
+2017-10-11 15:41:55,370 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In close
+2017-10-11 15:41:55,370 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In endDBTransaction
+2017-10-11 15:41:55,370 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In endDBTransaction
+2017-10-11 15:45:21,791 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-11) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:45:21,791 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-11) --> getSession method in Sessionutility class
+2017-10-11 15:45:21,791 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-11) Printing the status of the session: 
+2017-10-11 15:45:21,792 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-11) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:45:21,792 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In startDBTransaction
+2017-10-11 15:45:21,792 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In setConnection
+2017-10-11 15:45:21,792 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In getConnection
+2017-10-11 15:45:21,793 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-11) In <init>
+2017-10-11 15:45:21,793 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-11) In unloadMoneyFromWallet
+2017-10-11 15:45:21,793 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-11) In getConnection
+2017-10-11 15:45:21,793 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-11) In unloadMoneyFromWallet
+2017-10-11 15:45:21,793 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In getConnection
+2017-10-11 15:45:21,796 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In getConnection
+2017-10-11 15:45:21,797 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In getConnection
+2017-10-11 15:45:21,798 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In close
+2017-10-11 15:45:21,798 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In close
+2017-10-11 15:45:21,798 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In close
+2017-10-11 15:45:21,798 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In endDBTransaction
+2017-10-11 15:45:21,798 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In endDBTransaction
+2017-10-11 15:47:08,045 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-12) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:47:08,046 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-12) --> getSession method in Sessionutility class
+2017-10-11 15:47:08,046 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-12) Printing the status of the session: 
+2017-10-11 15:47:08,046 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-12) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:47:08,046 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In startDBTransaction
+2017-10-11 15:47:08,046 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In setConnection
+2017-10-11 15:47:08,047 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In getConnection
+2017-10-11 15:47:08,047 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-12) In <init>
+2017-10-11 15:47:08,047 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-12) In unloadMoneyFromWallet
+2017-10-11 15:47:08,047 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-12) In getConnection
+2017-10-11 15:47:08,047 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-12) In unloadMoneyFromWallet
+2017-10-11 15:47:08,048 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In getConnection
+2017-10-11 15:47:08,049 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In getConnection
+2017-10-11 15:47:08,050 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In getConnection
+2017-10-11 15:47:08,206 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In close
+2017-10-11 15:47:08,207 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In close
+2017-10-11 15:47:08,207 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In close
+2017-10-11 15:47:08,207 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In endDBTransaction
+2017-10-11 15:47:08,208 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In endDBTransaction
+2017-10-11 15:47:45,087 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-13) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:47:45,088 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-13) --> getSession method in Sessionutility class
+2017-10-11 15:47:45,088 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-13) Printing the status of the session: 
+2017-10-11 15:47:45,088 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-13) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:47:45,089 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In startDBTransaction
+2017-10-11 15:47:45,089 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In setConnection
+2017-10-11 15:47:45,090 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In getConnection
+2017-10-11 15:47:45,090 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-13) In <init>
+2017-10-11 15:47:45,091 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-13) In unloadMoneyFromWallet
+2017-10-11 15:47:45,091 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-13) In getConnection
+2017-10-11 15:47:45,092 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-13) In unloadMoneyFromWallet
+2017-10-11 15:47:45,092 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In getConnection
+2017-10-11 15:47:45,094 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In getConnection
+2017-10-11 15:47:45,095 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In getConnection
+2017-10-11 15:47:45,097 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-11 15:47:45,097 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-11 15:47:45,097 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-11 15:47:45,098 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In endDBTransaction
+2017-10-11 15:47:45,098 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In endDBTransaction
+2017-10-11 15:48:45,639 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-14) --> userSignUp method in UserResource class:: 
+2017-10-11 15:48:45,640 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-14) In User delegate--------->addNewUser
+2017-10-11 15:48:45,640 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In startDBTransaction
+2017-10-11 15:48:45,641 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In setConnection
+2017-10-11 15:48:45,641 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In getConnection
+2017-10-11 15:48:45,641 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-14) In <init>
+2017-10-11 15:48:45,641 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-14) In userSignIn
+2017-10-11 15:48:45,642 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-14) In getConnection
+2017-10-11 15:48:45,642 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-14) In userSignIn
+2017-10-11 15:48:45,642 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In getConnection
+2017-10-11 15:48:45,643 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-11 15:48:45,644 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-11 15:48:45,644 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-11 15:48:45,644 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In endDBTransaction
+2017-10-11 15:48:45,645 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In endDBTransaction
+2017-10-11 15:48:45,645 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-14) ---> createSession method in SessionUtility class
+2017-10-11 15:48:45,645 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-14) Printing the status of the session: 
+2017-10-11 15:48:56,793 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-15) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:48:56,794 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-15) --> getSession method in Sessionutility class
+2017-10-11 15:48:56,794 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-15) Printing the status of the session: 
+2017-10-11 15:48:56,795 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-15) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:48:56,795 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In startDBTransaction
+2017-10-11 15:48:56,796 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In setConnection
+2017-10-11 15:48:56,796 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In getConnection
+2017-10-11 15:48:56,797 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-15) In <init>
+2017-10-11 15:48:56,797 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-15) In unloadMoneyFromWallet
+2017-10-11 15:48:56,798 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-15) In getConnection
+2017-10-11 15:48:56,798 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-15) In unloadMoneyFromWallet
+2017-10-11 15:48:56,798 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In getConnection
+2017-10-11 15:48:56,801 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In getConnection
+2017-10-11 15:48:56,803 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In getConnection
+2017-10-11 15:48:56,805 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-11 15:48:56,805 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-11 15:48:56,806 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-11 15:48:56,806 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In endDBTransaction
+2017-10-11 15:48:56,807 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In endDBTransaction
+2017-10-11 15:50:46,824 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-17) --> userSignUp method in UserResource class:: 
+2017-10-11 15:50:46,824 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-17) In User delegate--------->addNewUser
+2017-10-11 15:50:46,824 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In startDBTransaction
+2017-10-11 15:50:46,825 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In setConnection
+2017-10-11 15:50:46,825 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In getConnection
+2017-10-11 15:50:46,825 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-17) In <init>
+2017-10-11 15:50:46,825 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-17) In userSignIn
+2017-10-11 15:50:46,825 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-17) In getConnection
+2017-10-11 15:50:46,825 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-17) In userSignIn
+2017-10-11 15:50:46,825 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In getConnection
+2017-10-11 15:50:46,829 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In close
+2017-10-11 15:50:46,829 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In close
+2017-10-11 15:50:46,829 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In close
+2017-10-11 15:50:46,830 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In endDBTransaction
+2017-10-11 15:50:46,830 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In endDBTransaction
+2017-10-11 15:50:46,830 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-17) ---> createSession method in SessionUtility class
+2017-10-11 15:50:46,830 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-17) Printing the status of the session: 
+2017-10-11 15:51:01,687 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-18) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:51:01,687 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-18) --> getSession method in Sessionutility class
+2017-10-11 15:51:01,687 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-18) Printing the status of the session: 
+2017-10-11 15:51:01,687 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-18) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:51:01,687 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In startDBTransaction
+2017-10-11 15:51:01,688 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In setConnection
+2017-10-11 15:51:01,688 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In getConnection
+2017-10-11 15:51:01,688 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-18) In <init>
+2017-10-11 15:51:01,688 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-18) In unloadMoneyFromWallet
+2017-10-11 15:51:01,688 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-18) In getConnection
+2017-10-11 15:51:01,688 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-18) In unloadMoneyFromWallet
+2017-10-11 15:51:01,689 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In getConnection
+2017-10-11 15:51:01,690 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In getConnection
+2017-10-11 15:51:01,691 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In getConnection
+2017-10-11 15:51:01,692 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In close
+2017-10-11 15:51:01,692 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In close
+2017-10-11 15:51:01,692 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In close
+2017-10-11 15:51:01,692 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In endDBTransaction
+2017-10-11 15:51:01,693 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In endDBTransaction
+2017-10-11 15:54:44,752 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-20) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:54:44,752 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-20) --> getSession method in Sessionutility class
+2017-10-11 15:54:44,752 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-20) Printing the status of the session: 
+2017-10-11 15:54:44,752 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-20) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:54:44,753 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-20) In startDBTransaction
+2017-10-11 15:54:44,753 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-20) In setConnection
+2017-10-11 15:54:44,753 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-20) In getConnection
+2017-10-11 15:54:44,753 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-20) In <init>
+2017-10-11 15:54:44,754 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-20) In unloadMoneyFromWallet
+2017-10-11 15:54:44,754 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-20) In getConnection
+2017-10-11 15:54:44,754 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-20) In unloadMoneyFromWallet
+2017-10-11 15:54:44,754 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-20) In getConnection
+2017-10-11 15:54:44,756 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-20) In getConnection
+2017-10-11 15:54:44,757 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-20) In getConnection
+2017-10-11 15:54:44,758 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-20) In close
+2017-10-11 15:54:44,759 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-20) In close
+2017-10-11 15:54:44,759 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-20) In close
+2017-10-11 15:54:44,759 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-20) In endDBTransaction
+2017-10-11 15:54:44,759 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-20) In endDBTransaction
+2017-10-11 15:56:02,802 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-21) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:56:02,803 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-21) --> getSession method in Sessionutility class
+2017-10-11 15:56:02,803 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-21) Printing the status of the session: 
+2017-10-11 15:56:02,803 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-21) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:56:02,803 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In startDBTransaction
+2017-10-11 15:56:02,803 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In setConnection
+2017-10-11 15:56:02,803 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In getConnection
+2017-10-11 15:56:02,803 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-21) In <init>
+2017-10-11 15:56:02,804 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-21) In unloadMoneyFromWallet
+2017-10-11 15:56:02,804 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-21) In getConnection
+2017-10-11 15:56:02,804 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-21) In unloadMoneyFromWallet
+2017-10-11 15:56:02,804 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In getConnection
+2017-10-11 15:56:02,806 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In getConnection
+2017-10-11 15:56:02,807 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In getConnection
+2017-10-11 15:56:02,904 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-11 15:56:02,904 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-11 15:56:02,904 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-11 15:56:02,905 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In endDBTransaction
+2017-10-11 15:56:02,905 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In endDBTransaction
+2017-10-11 15:56:04,316 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-22) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:56:04,316 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-22) --> getSession method in Sessionutility class
+2017-10-11 15:56:04,316 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-22) Printing the status of the session: 
+2017-10-11 15:56:04,317 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-22) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:56:04,317 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-22) In startDBTransaction
+2017-10-11 15:56:04,318 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-22) In setConnection
+2017-10-11 15:56:04,318 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-22) In getConnection
+2017-10-11 15:56:04,318 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-22) In <init>
+2017-10-11 15:56:04,319 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-22) In unloadMoneyFromWallet
+2017-10-11 15:56:04,319 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-22) In getConnection
+2017-10-11 15:56:04,319 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-22) In unloadMoneyFromWallet
+2017-10-11 15:56:04,320 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-22) In getConnection
+2017-10-11 15:56:04,322 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-22) In getConnection
+2017-10-11 15:56:04,324 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-22) In getConnection
+2017-10-11 15:56:04,326 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-22) In close
+2017-10-11 15:56:04,326 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-22) In close
+2017-10-11 15:56:04,327 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-22) In close
+2017-10-11 15:56:04,327 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-22) In endDBTransaction
+2017-10-11 15:56:04,327 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-22) In endDBTransaction
+2017-10-11 15:57:18,716 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-23) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:57:18,716 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-23) --> getSession method in Sessionutility class
+2017-10-11 15:57:18,716 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-23) Printing the status of the session: 
+2017-10-11 15:57:18,716 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-23) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:57:18,716 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In startDBTransaction
+2017-10-11 15:57:18,716 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In setConnection
+2017-10-11 15:57:18,716 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In getConnection
+2017-10-11 15:57:18,716 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-23) In <init>
+2017-10-11 15:57:18,717 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-23) In unloadMoneyFromWallet
+2017-10-11 15:57:18,717 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-23) In getConnection
+2017-10-11 15:57:18,717 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-23) In unloadMoneyFromWallet
+2017-10-11 15:57:18,717 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In getConnection
+2017-10-11 15:57:18,718 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In getConnection
+2017-10-11 15:57:18,719 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In getConnection
+2017-10-11 15:57:18,720 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In close
+2017-10-11 15:57:18,720 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In close
+2017-10-11 15:57:18,720 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In close
+2017-10-11 15:57:18,720 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In endDBTransaction
+2017-10-11 15:57:18,720 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In endDBTransaction
+2017-10-11 15:58:53,264 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) In MailtoSend Delegate
+2017-10-11 15:58:53,265 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In startDBTransaction
+2017-10-11 15:58:53,265 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In setConnection
+2017-10-11 15:58:53,266 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In getConnection
+2017-10-11 15:58:53,266 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In <init>
+2017-10-11 15:58:53,266 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-4-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 15:58:53,266 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In getConnection
+2017-10-11 15:58:53,266 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-4-thread-1) In mail to Vendor DAO
+2017-10-11 15:58:53,269 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 15:58:53,269 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 15:58:53,269 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 15:58:53,269 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 15:58:53,270 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 15:58:53,270 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) No transaction done In Last 5 Hours
+2017-10-11 15:58:59,362 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-24) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 15:58:59,362 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-24) --> getSession method in Sessionutility class
+2017-10-11 15:58:59,366 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-24) Printing the status of the session: 
+2017-10-11 15:58:59,366 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-24) In transaction delegate--------->addMoneyToWallet
+2017-10-11 15:58:59,366 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-24) In startDBTransaction
+2017-10-11 15:58:59,367 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-24) In setConnection
+2017-10-11 15:58:59,367 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-24) In getConnection
+2017-10-11 15:58:59,367 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-24) In <init>
+2017-10-11 15:58:59,367 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-24) In unloadMoneyFromWallet
+2017-10-11 15:58:59,368 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-24) In getConnection
+2017-10-11 15:58:59,368 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-24) In unloadMoneyFromWallet
+2017-10-11 15:58:59,368 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-24) In getConnection
+2017-10-11 15:58:59,370 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-24) In getConnection
+2017-10-11 15:58:59,371 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-24) In getConnection
+2017-10-11 15:58:59,372 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-24) In close
+2017-10-11 15:58:59,373 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-24) In close
+2017-10-11 15:58:59,373 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-24) In close
+2017-10-11 15:58:59,373 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-24) In endDBTransaction
+2017-10-11 15:58:59,373 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-24) In endDBTransaction
+2017-10-11 16:00:17,455 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-25) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 16:00:17,456 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-25) --> getSession method in Sessionutility class
+2017-10-11 16:00:17,456 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-25) Printing the status of the session: 
+2017-10-11 16:00:17,456 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-25) In transaction delegate--------->addMoneyToWallet
+2017-10-11 16:00:17,457 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In startDBTransaction
+2017-10-11 16:00:17,457 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In setConnection
+2017-10-11 16:00:17,458 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In getConnection
+2017-10-11 16:00:17,458 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-25) In <init>
+2017-10-11 16:00:17,458 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-25) In unloadMoneyFromWallet
+2017-10-11 16:00:17,458 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-25) In getConnection
+2017-10-11 16:00:17,459 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-25) In unloadMoneyFromWallet
+2017-10-11 16:00:17,459 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In getConnection
+2017-10-11 16:00:17,461 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In getConnection
+2017-10-11 16:00:17,462 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In getConnection
+2017-10-11 16:00:17,463 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In close
+2017-10-11 16:00:17,464 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In close
+2017-10-11 16:00:17,464 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-25) In close
+2017-10-11 16:00:17,464 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In endDBTransaction
+2017-10-11 16:00:17,465 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-25) In endDBTransaction
+2017-10-11 16:19:23,301 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-28) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 16:19:23,302 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-28) --> getSession method in Sessionutility class
+2017-10-11 16:19:23,302 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-28) Printing the status of the session: 
+2017-10-11 16:19:23,302 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-28) In transaction delegate--------->addMoneyToWallet
+2017-10-11 16:19:23,303 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In startDBTransaction
+2017-10-11 16:19:23,303 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In setConnection
+2017-10-11 16:19:23,304 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In getConnection
+2017-10-11 16:19:23,304 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-28) In <init>
+2017-10-11 16:19:23,304 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-28) In unloadMoneyFromWallet
+2017-10-11 16:19:23,305 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-28) In getConnection
+2017-10-11 16:19:23,305 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-28) In unloadMoneyFromWallet
+2017-10-11 16:19:23,305 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In getConnection
+2017-10-11 16:19:23,307 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In close
+2017-10-11 16:19:23,308 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In close
+2017-10-11 16:19:23,308 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In close
+2017-10-11 16:19:23,308 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In endDBTransaction
+2017-10-11 16:19:23,309 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In endDBTransaction
+2017-10-11 16:39:56,855 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-8-thread-1) In MailtoSend Delegate
+2017-10-11 16:39:56,856 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In startDBTransaction
+2017-10-11 16:39:56,856 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In setConnection
+2017-10-11 16:39:56,856 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In getConnection
+2017-10-11 16:39:56,856 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-8-thread-1) In <init>
+2017-10-11 16:39:56,856 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-8-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 16:39:56,857 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-8-thread-1) In getConnection
+2017-10-11 16:39:56,857 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-8-thread-1) In mail to Vendor DAO
+2017-10-11 16:39:56,858 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 16:39:56,859 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 16:39:56,859 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-8-thread-1) In close
+2017-10-11 16:39:56,859 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In endDBTransaction
+2017-10-11 16:39:56,859 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-8-thread-1) In endDBTransaction
+2017-10-11 16:39:56,860 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-8-thread-1) No transaction done In Last 5 Hours
+2017-10-11 16:49:25,286 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-32) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 16:49:25,286 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-32) --> getSession method in Sessionutility class
+2017-10-11 16:49:25,286 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-32) Printing the status of the session: 
+2017-10-11 16:52:41,086 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-35) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 16:52:41,086 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-35) --> getSession method in Sessionutility class
+2017-10-11 16:52:41,087 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-35) Printing the status of the session: 
+2017-10-11 16:55:23,255 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-36) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 16:55:23,255 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-36) --> getSession method in Sessionutility class
+2017-10-11 16:55:23,255 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-36) Printing the status of the session: 
+2017-10-11 16:58:53,264 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) In MailtoSend Delegate
+2017-10-11 16:58:53,265 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In startDBTransaction
+2017-10-11 16:58:53,265 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In setConnection
+2017-10-11 16:58:53,265 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In getConnection
+2017-10-11 16:58:53,265 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In <init>
+2017-10-11 16:58:53,266 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-4-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 16:58:53,266 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In getConnection
+2017-10-11 16:58:53,266 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-4-thread-1) In mail to Vendor DAO
+2017-10-11 16:58:53,268 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 16:58:53,268 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 16:58:53,268 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 16:58:53,268 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 16:58:53,269 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 16:58:53,269 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) No transaction done In Last 5 Hours
+2017-10-11 17:00:51,685 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-10-thread-1) In MailtoSend Delegate
+2017-10-11 17:00:51,685 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In startDBTransaction
+2017-10-11 17:00:51,696 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In setConnection
+2017-10-11 17:00:51,700 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In getConnection
+2017-10-11 17:00:51,703 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-10-thread-1) In <init>
+2017-10-11 17:00:51,703 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-10-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 17:00:51,705 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-10-thread-1) In getConnection
+2017-10-11 17:00:51,705 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-10-thread-1) In mail to Vendor DAO
+2017-10-11 17:00:51,711 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-10-thread-1) In close
+2017-10-11 17:00:51,712 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-10-thread-1) In close
+2017-10-11 17:00:51,712 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-10-thread-1) In close
+2017-10-11 17:00:51,712 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In endDBTransaction
+2017-10-11 17:00:51,712 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-10-thread-1) In endDBTransaction
+2017-10-11 17:00:51,712 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-10-thread-1) No transaction done In Last 5 Hours
+2017-10-11 17:01:27,359 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-38) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 17:01:27,360 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-38) --> getSession method in Sessionutility class
+2017-10-11 17:01:27,360 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-38) Printing the status of the session: 
+2017-10-11 17:03:31,494 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-39) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 17:03:31,494 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-39) --> getSession method in Sessionutility class
+2017-10-11 17:03:31,494 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-39) Printing the status of the session: 
+2017-10-11 17:08:31,771 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-41) --> userSignUp method in UserResource class:: 
+2017-10-11 17:08:31,773 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-41) In User delegate--------->addNewUser
+2017-10-11 17:08:31,773 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-41) In startDBTransaction
+2017-10-11 17:08:31,773 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-41) In setConnection
+2017-10-11 17:08:31,773 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-41) In getConnection
+2017-10-11 17:08:31,774 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-41) In <init>
+2017-10-11 17:08:31,774 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-41) In userSignIn
+2017-10-11 17:08:31,775 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-41) In getConnection
+2017-10-11 17:08:31,775 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-41) In userSignIn
+2017-10-11 17:08:31,775 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-41) In getConnection
+2017-10-11 17:08:31,776 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-41) In close
+2017-10-11 17:08:31,776 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-41) In close
+2017-10-11 17:08:31,776 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-41) In close
+2017-10-11 17:08:31,776 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-41) In endDBTransaction
+2017-10-11 17:08:31,776 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-41) In endDBTransaction
+2017-10-11 17:08:31,777 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-41) ---> createSession method in SessionUtility class
+2017-10-11 17:08:31,777 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-41) Printing the status of the session: 
+2017-10-11 17:08:44,161 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-42) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 17:08:44,161 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-42) --> getSession method in Sessionutility class
+2017-10-11 17:08:44,161 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-42) Printing the status of the session: 
+2017-10-11 17:08:44,161 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-42) In transaction delegate--------->addMoneyToWallet
+2017-10-11 17:08:44,161 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-42) In startDBTransaction
+2017-10-11 17:08:44,162 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-42) In setConnection
+2017-10-11 17:08:44,162 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-42) In getConnection
+2017-10-11 17:08:44,162 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-42) In <init>
+2017-10-11 17:08:44,162 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-42) In unloadMoneyFromWallet
+2017-10-11 17:08:44,162 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-42) In getConnection
+2017-10-11 17:08:44,162 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-42) In unloadMoneyFromWallet
+2017-10-11 17:08:44,162 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-42) In getConnection
+2017-10-11 17:08:44,164 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-42) In getConnection
+2017-10-11 17:08:44,165 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-42) In getConnection
+2017-10-11 17:08:44,288 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-42) In close
+2017-10-11 17:08:44,288 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-42) In close
+2017-10-11 17:08:44,288 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-42) In close
+2017-10-11 17:08:44,289 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-42) In endDBTransaction
+2017-10-11 17:08:44,289 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-42) In endDBTransaction
+2017-10-11 17:18:26,990 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) In MailtoSend Delegate
+2017-10-11 17:18:26,996 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In startDBTransaction
+2017-10-11 17:18:27,014 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In setConnection
+2017-10-11 17:18:27,020 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In getConnection
+2017-10-11 17:18:27,023 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In <init>
+2017-10-11 17:18:27,023 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (pool-4-thread-1) In mailToSend =---> TransactionBO class
+2017-10-11 17:18:27,032 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (pool-4-thread-1) In getConnection
+2017-10-11 17:18:27,033 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (pool-4-thread-1) In mail to Vendor DAO
+2017-10-11 17:18:27,141 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 17:18:27,152 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 17:18:27,152 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (pool-4-thread-1) In close
+2017-10-11 17:18:27,152 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 17:18:27,153 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (pool-4-thread-1) In endDBTransaction
+2017-10-11 17:18:27,161 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (pool-4-thread-1) No transaction done In Last 5 Hours
+2017-10-11 17:18:44,033 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-2) --> userSignUp method in UserResource class:: 
+2017-10-11 17:18:44,034 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-2) In User delegate--------->addNewUser
+2017-10-11 17:18:44,035 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In startDBTransaction
+2017-10-11 17:18:44,036 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In setConnection
+2017-10-11 17:18:44,037 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In getConnection
+2017-10-11 17:18:44,037 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In <init>
+2017-10-11 17:18:44,037 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-2) In userSignIn
+2017-10-11 17:18:44,038 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In getConnection
+2017-10-11 17:18:44,039 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-2) In userSignIn
+2017-10-11 17:18:44,039 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In getConnection
+2017-10-11 17:18:44,041 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-11 17:18:44,041 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-11 17:18:44,041 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-11 17:18:44,042 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-11 17:18:44,042 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-11 17:18:44,042 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-2) ---> createSession method in SessionUtility class
+2017-10-11 17:18:44,044 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-2) Printing the status of the session: 
+2017-10-11 17:18:49,243 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-5) ---> getTotalPagesOfTransactions method in TransactionResource class:: 
+2017-10-11 17:18:49,244 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-5) --> getSession method in Sessionutility class
+2017-10-11 17:18:49,244 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-5) Printing the status of the session: 
+2017-10-11 17:18:49,244 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-5) In transaction delegate---------> getTotalPagesOfTransactions
+2017-10-11 17:18:49,244 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In startDBTransaction
+2017-10-11 17:18:49,245 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In setConnection
+2017-10-11 17:18:49,245 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In getConnection
+2017-10-11 17:18:49,245 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-5) In <init>
+2017-10-11 17:18:49,245 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-5) In getTotalPagesOfTransactions
+2017-10-11 17:18:49,246 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-5) In getConnection
+2017-10-11 17:18:49,246 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-5) In getTotalPagesOfTransactions
+2017-10-11 17:18:49,247 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In getConnection
+2017-10-11 17:18:49,248 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In getConnection
+2017-10-11 17:18:49,250 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In close
+2017-10-11 17:18:49,250 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In close
+2017-10-11 17:18:49,250 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In close
+2017-10-11 17:18:49,251 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In endDBTransaction
+2017-10-11 17:18:49,251 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In endDBTransaction
+2017-10-11 17:18:49,290 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-6) =---> paginationOfTransactions method in UserResource class: 
+2017-10-11 17:18:49,290 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-6) --> getSession method in Sessionutility class
+2017-10-11 17:18:49,290 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-6) Printing the status of the session: 
+2017-10-11 17:18:49,290 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-6) In User Delegate------> getPagesOfTransactionDetails
+2017-10-11 17:18:49,290 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) In startDBTransaction
+2017-10-11 17:18:49,291 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) In setConnection
+2017-10-11 17:18:49,291 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) In getConnection
+2017-10-11 17:18:49,291 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-6) In <init>
+2017-10-11 17:18:49,291 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-6) In getConnection
+2017-10-11 17:18:49,291 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-6) In getPageOfTransactionDetails
+2017-10-11 17:18:49,292 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In getConnection
+2017-10-11 17:18:49,292 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-6) In getPageOfTransactionDetails2
+2017-10-11 17:18:49,299 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In close
+2017-10-11 17:18:49,299 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In close
+2017-10-11 17:18:49,299 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In close
+2017-10-11 17:18:49,300 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In close
+2017-10-11 17:18:49,300 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In close
+2017-10-11 17:18:49,300 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In close
+2017-10-11 17:18:49,300 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) In endDBTransaction
+2017-10-11 17:18:49,301 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) In endDBTransaction
+2017-10-11 17:19:08,869 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-9) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-11 17:19:08,870 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-9) --> getSession method in Sessionutility class
+2017-10-11 17:19:08,870 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-9) Printing the status of the session: 
+2017-10-11 17:19:08,871 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-9) In User Delegate------> getListOfFriends
+2017-10-11 17:19:08,871 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In startDBTransaction
+2017-10-11 17:19:08,873 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In setConnection
+2017-10-11 17:19:08,873 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-10) =---> suggestFriendsToUser method in UserResource class: 
+2017-10-11 17:19:08,873 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-10) --> getSession method in Sessionutility class
+2017-10-11 17:19:08,873 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-10) Printing the status of the session: 
+2017-10-11 17:19:08,876 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-10) In User Delegate------> getPendingRequests
+2017-10-11 17:19:08,877 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In startDBTransaction
+2017-10-11 17:19:08,876 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In getConnection
+2017-10-11 17:19:08,880 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-9) In <init>
+2017-10-11 17:19:08,880 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-9) In getConnection
+2017-10-11 17:19:08,880 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-9) In getListOfFriends
+2017-10-11 17:19:08,883 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In getConnection
+2017-10-11 17:19:08,884 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In setConnection
+2017-10-11 17:19:08,884 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In getConnection
+2017-10-11 17:19:08,884 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-10) In <init>
+2017-10-11 17:19:08,884 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-10) In getConnection
+2017-10-11 17:19:08,884 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-10) In getPendingRequests
+2017-10-11 17:19:08,885 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In getConnection
+2017-10-11 17:19:08,885 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In getConnection
+2017-10-11 17:19:08,887 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In close
+2017-10-11 17:19:08,887 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In getConnection
+2017-10-11 17:19:08,887 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In close
+2017-10-11 17:19:08,887 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In close
+2017-10-11 17:19:08,888 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In endDBTransaction
+2017-10-11 17:19:08,888 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In endDBTransaction
+2017-10-11 17:19:08,890 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In close
+2017-10-11 17:19:08,891 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In close
+2017-10-11 17:19:08,891 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-10) In close
+2017-10-11 17:19:08,891 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In endDBTransaction
+2017-10-11 17:19:08,891 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-10) In endDBTransaction
+2017-10-11 17:19:26,012 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-12) =---> unloadMoneyFromWallet method in TransactionResource class:: 
+2017-10-11 17:19:26,013 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-12) --> getSession method in Sessionutility class
+2017-10-11 17:19:26,013 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-12) Printing the status of the session: 
+2017-10-11 17:19:26,014 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-12) In transaction delegate--------->addMoneyToWallet
+2017-10-11 17:19:26,014 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In startDBTransaction
+2017-10-11 17:19:26,021 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In setConnection
+2017-10-11 17:19:26,021 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In getConnection
+2017-10-11 17:19:26,022 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-12) In <init>
+2017-10-11 17:19:26,022 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-12) In unloadMoneyFromWallet
+2017-10-11 17:19:26,022 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-12) In getConnection
+2017-10-11 17:19:26,023 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-12) In unloadMoneyFromWallet
+2017-10-11 17:19:26,024 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In getConnection
+2017-10-11 17:19:26,030 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In getConnection
+2017-10-11 17:19:26,032 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In getConnection
+2017-10-11 17:19:26,035 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In close
+2017-10-11 17:19:26,036 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In close
+2017-10-11 17:19:26,036 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In close
+2017-10-11 17:19:26,037 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In endDBTransaction
+2017-10-11 17:19:26,037 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In endDBTransaction
+2017-10-11 17:19:50,234 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-13) ---> getTotalPagesOfTransactions method in TransactionResource class:: 
+2017-10-11 17:19:50,234 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-13) --> getSession method in Sessionutility class
+2017-10-11 17:19:50,234 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-13) Printing the status of the session: 
+2017-10-11 17:19:50,234 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-13) In transaction delegate---------> getTotalPagesOfTransactions
+2017-10-11 17:19:50,234 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In startDBTransaction
+2017-10-11 17:19:50,234 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In setConnection
+2017-10-11 17:19:50,234 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In getConnection
+2017-10-11 17:19:50,235 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-13) In <init>
+2017-10-11 17:19:50,235 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-13) In getTotalPagesOfTransactions
+2017-10-11 17:19:50,235 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-13) In getConnection
+2017-10-11 17:19:50,235 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-13) In getTotalPagesOfTransactions
+2017-10-11 17:19:50,235 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In getConnection
+2017-10-11 17:19:50,236 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In getConnection
+2017-10-11 17:19:50,238 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-11 17:19:50,238 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-11 17:19:50,238 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-11 17:19:50,238 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In endDBTransaction
+2017-10-11 17:19:50,238 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In endDBTransaction
+2017-10-11 17:19:50,244 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-14) =---> paginationOfTransactions method in UserResource class: 
+2017-10-11 17:19:50,245 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-14) --> getSession method in Sessionutility class
+2017-10-11 17:19:50,245 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-14) Printing the status of the session: 
+2017-10-11 17:19:50,245 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-14) In User Delegate------> getPagesOfTransactionDetails
+2017-10-11 17:19:50,246 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In startDBTransaction
+2017-10-11 17:19:50,248 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In setConnection
+2017-10-11 17:19:50,249 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In getConnection
+2017-10-11 17:19:50,249 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-14) In <init>
+2017-10-11 17:19:50,249 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-14) In getConnection
+2017-10-11 17:19:50,250 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-14) In getPageOfTransactionDetails
+2017-10-11 17:19:50,250 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In getConnection
+2017-10-11 17:19:50,251 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-14) In getPageOfTransactionDetails2
+2017-10-11 17:19:50,253 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-11 17:19:50,253 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-11 17:19:50,254 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-11 17:19:50,254 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-11 17:19:50,254 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-11 17:19:50,254 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-14) In close
+2017-10-11 17:19:50,254 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In endDBTransaction
+2017-10-11 17:19:50,254 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-14) In endDBTransaction
+2017-10-11 17:19:57,515 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-15) =---> paginationOfTransactions method in UserResource class: 
+2017-10-11 17:19:57,516 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-15) --> getSession method in Sessionutility class
+2017-10-11 17:19:57,516 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-15) Printing the status of the session: 
+2017-10-11 17:19:57,516 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-15) In User Delegate------> getPagesOfTransactionDetails
+2017-10-11 17:19:57,516 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In startDBTransaction
+2017-10-11 17:19:57,516 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In setConnection
+2017-10-11 17:19:57,516 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In getConnection
+2017-10-11 17:19:57,516 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-15) In <init>
+2017-10-11 17:19:57,517 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-15) In getConnection
+2017-10-11 17:19:57,517 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-15) In getPageOfTransactionDetails
+2017-10-11 17:19:57,517 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In getConnection
+2017-10-11 17:19:57,518 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-15) In getPageOfTransactionDetails2
+2017-10-11 17:19:57,520 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-11 17:19:57,520 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-11 17:19:57,520 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-11 17:19:57,521 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-11 17:19:57,521 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-11 17:19:57,521 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-11 17:19:57,521 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In endDBTransaction
+2017-10-11 17:19:57,521 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In endDBTransaction
+2017-10-11 17:19:58,695 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-17) =---> paginationOfTransactions method in UserResource class: 
+2017-10-11 17:19:58,696 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-17) --> getSession method in Sessionutility class
+2017-10-11 17:19:58,696 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-17) Printing the status of the session: 
+2017-10-11 17:19:58,696 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-17) In User Delegate------> getPagesOfTransactionDetails
+2017-10-11 17:19:58,697 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In startDBTransaction
+2017-10-11 17:19:58,698 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In setConnection
+2017-10-11 17:19:58,698 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In getConnection
+2017-10-11 17:19:58,699 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-17) In <init>
+2017-10-11 17:19:58,699 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-17) In getConnection
+2017-10-11 17:19:58,700 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-17) In getPageOfTransactionDetails
+2017-10-11 17:19:58,700 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In getConnection
+2017-10-11 17:19:58,702 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-17) In getPageOfTransactionDetails2
+2017-10-11 17:19:58,712 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In close
+2017-10-11 17:19:58,713 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In close
+2017-10-11 17:19:58,713 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In close
+2017-10-11 17:19:58,714 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In close
+2017-10-11 17:19:58,714 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In close
+2017-10-11 17:19:58,715 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-17) In close
+2017-10-11 17:19:58,715 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In endDBTransaction
+2017-10-11 17:19:58,715 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-17) In endDBTransaction
+2017-10-11 17:19:59,308 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-19) =---> paginationOfTransactions method in UserResource class: 
+2017-10-11 17:19:59,309 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-19) --> getSession method in Sessionutility class
+2017-10-11 17:19:59,309 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-19) Printing the status of the session: 
+2017-10-11 17:19:59,309 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-19) In User Delegate------> getPagesOfTransactionDetails
+2017-10-11 17:19:59,310 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In startDBTransaction
+2017-10-11 17:19:59,310 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In setConnection
+2017-10-11 17:19:59,311 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In getConnection
+2017-10-11 17:19:59,311 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-19) In <init>
+2017-10-11 17:19:59,311 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-19) In getConnection
+2017-10-11 17:19:59,311 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-19) In getPageOfTransactionDetails
+2017-10-11 17:19:59,312 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In getConnection
+2017-10-11 17:19:59,313 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-19) In getPageOfTransactionDetails2
+2017-10-11 17:19:59,317 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-11 17:19:59,318 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-11 17:19:59,318 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-11 17:19:59,319 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-11 17:19:59,319 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-11 17:19:59,319 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-11 17:19:59,320 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In endDBTransaction
+2017-10-11 17:19:59,320 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In endDBTransaction
+2017-10-11 17:20:00,721 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-21) =---> paginationOfTransactions method in UserResource class: 
+2017-10-11 17:20:00,721 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-21) --> getSession method in Sessionutility class
+2017-10-11 17:20:00,721 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-21) Printing the status of the session: 
+2017-10-11 17:20:00,721 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-21) In User Delegate------> getPagesOfTransactionDetails
+2017-10-11 17:20:00,722 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In startDBTransaction
+2017-10-11 17:20:00,722 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In setConnection
+2017-10-11 17:20:00,723 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In getConnection
+2017-10-11 17:20:00,723 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-21) In <init>
+2017-10-11 17:20:00,723 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-21) In getConnection
+2017-10-11 17:20:00,724 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-21) In getPageOfTransactionDetails
+2017-10-11 17:20:00,724 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In getConnection
+2017-10-11 17:20:00,725 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-21) In getPageOfTransactionDetails2
+2017-10-11 17:20:00,727 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-11 17:20:00,727 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-11 17:20:00,727 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-11 17:20:00,727 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-11 17:20:00,727 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-11 17:20:00,727 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-21) In close
+2017-10-11 17:20:00,727 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In endDBTransaction
+2017-10-11 17:20:00,728 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-21) In endDBTransaction

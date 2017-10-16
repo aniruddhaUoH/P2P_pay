@@ -1,0 +1,1026 @@
+2017-10-03 09:57:53,736 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-2) --> userSignUp method in UserResource class:: 
+2017-10-03 09:57:53,738 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-2) In User delegate--------->addNewUser
+2017-10-03 09:57:53,738 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In startDBTransaction
+2017-10-03 09:57:53,745 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In setConnection
+2017-10-03 09:57:53,745 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In getConnection
+2017-10-03 09:57:53,746 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In <init>
+2017-10-03 09:57:53,746 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-2) In userSignIn
+2017-10-03 09:57:53,747 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In getConnection
+2017-10-03 09:57:53,747 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-2) In userSignIn
+2017-10-03 09:57:53,748 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In getConnection
+2017-10-03 09:57:53,763 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-03 09:57:53,763 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-03 09:57:53,764 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-03 09:57:53,764 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-03 09:57:53,764 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-03 09:57:53,765 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-2) ---> createSession method in SessionUtility class
+2017-10-03 09:57:53,767 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-2) Printing the status of the session: 
+2017-10-03 10:28:58,865 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-4) ---> addMoneyToWallet method in TransactionResource class:: 
+2017-10-03 10:28:58,866 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-4) --> getSession method in Sessionutility class
+2017-10-03 10:28:58,866 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-4) Printing the status of the session: 
+2017-10-03 10:28:58,866 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-4) In transaction delegate--------->addMoneyToWallet
+2017-10-03 10:28:58,866 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In startDBTransaction
+2017-10-03 10:28:58,867 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In setConnection
+2017-10-03 10:28:58,868 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In getConnection
+2017-10-03 10:28:58,868 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-4) In <init>
+2017-10-03 10:28:58,868 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-4) In addMoneyToWallet
+2017-10-03 10:28:58,869 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-4) In getConnection
+2017-10-03 10:28:58,869 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-4) In addMoneyToWallet
+2017-10-03 10:28:58,869 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In getConnection
+2017-10-03 10:28:58,871 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In getConnection
+2017-10-03 10:28:58,877 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-4) SQLException in addMoneyToWallet You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeUpdate(WrappedPreparedStatement.java:537)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.addMoneyToWallet(TransactionDAO.java:39)
+	at com.alacriti.p2p.bo.impl.TransactionBO.addMoneyToWallet(TransactionBO.java:26)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.addMoneyToWallet(TransactionDelegate.java:23)
+	at com.alacriti.p2p.resteasy.resources.TransactionResource.addMoneyToWallet(TransactionResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-03 10:28:58,878 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-03 10:28:58,878 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-03 10:28:58,878 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-03 10:28:58,878 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (default task-4) Exception in retrieveMessage null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.addMoneyToWallet(TransactionDAO.java:48)
+	at com.alacriti.p2p.bo.impl.TransactionBO.addMoneyToWallet(TransactionBO.java:26)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.addMoneyToWallet(TransactionDelegate.java:23)
+	at com.alacriti.p2p.resteasy.resources.TransactionResource.addMoneyToWallet(TransactionResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-03 10:28:58,879 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-4) Exception in getMessage null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.addMoneyToWallet(TransactionBO.java:30)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.addMoneyToWallet(TransactionDelegate.java:23)
+	at com.alacriti.p2p.resteasy.resources.TransactionResource.addMoneyToWallet(TransactionResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-03 10:28:58,880 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In endDBTransaction
+2017-10-03 10:28:58,933 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) Rolled Back on some exception....!!!
+2017-10-03 10:30:52,750 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-5) ---> addMoneyToWallet method in TransactionResource class:: 
+2017-10-03 10:30:52,750 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-5) --> getSession method in Sessionutility class
+2017-10-03 10:30:52,750 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-5) Printing the status of the session: 
+2017-10-03 10:30:52,750 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-5) In transaction delegate--------->addMoneyToWallet
+2017-10-03 10:30:52,753 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In startDBTransaction
+2017-10-03 10:30:52,754 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In setConnection
+2017-10-03 10:30:52,754 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In getConnection
+2017-10-03 10:30:52,754 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-5) In <init>
+2017-10-03 10:30:52,754 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-5) In addMoneyToWallet
+2017-10-03 10:30:52,755 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-5) In getConnection
+2017-10-03 10:30:52,756 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-5) In addMoneyToWallet
+2017-10-03 10:30:52,756 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In getConnection
+2017-10-03 10:30:52,757 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In getConnection
+2017-10-03 10:30:52,758 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-5) SQLException in addMoneyToWallet You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeUpdate(WrappedPreparedStatement.java:537)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.addMoneyToWallet(TransactionDAO.java:39)
+	at com.alacriti.p2p.bo.impl.TransactionBO.addMoneyToWallet(TransactionBO.java:26)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.addMoneyToWallet(TransactionDelegate.java:23)
+	at com.alacriti.p2p.resteasy.resources.TransactionResource.addMoneyToWallet(TransactionResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-03 10:30:52,758 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In close
+2017-10-03 10:30:52,759 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In close
+2017-10-03 10:30:52,759 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In close
+2017-10-03 10:30:52,759 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (default task-5) Exception in retrieveMessage null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.addMoneyToWallet(TransactionDAO.java:48)
+	at com.alacriti.p2p.bo.impl.TransactionBO.addMoneyToWallet(TransactionBO.java:26)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.addMoneyToWallet(TransactionDelegate.java:23)
+	at com.alacriti.p2p.resteasy.resources.TransactionResource.addMoneyToWallet(TransactionResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-03 10:30:52,759 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-5) Exception in getMessage null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.addMoneyToWallet(TransactionBO.java:30)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.addMoneyToWallet(TransactionDelegate.java:23)
+	at com.alacriti.p2p.resteasy.resources.TransactionResource.addMoneyToWallet(TransactionResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-03 10:30:52,760 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In endDBTransaction
+2017-10-03 10:30:52,883 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) Rolled Back on some exception....!!!
+2017-10-03 10:31:05,894 DEBUG [com.alacriti.p2p.resteasy.resources.TransactionResource] (default task-6) ---> addMoneyToWallet method in TransactionResource class:: 
+2017-10-03 10:31:05,895 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-6) --> getSession method in Sessionutility class
+2017-10-03 10:31:05,895 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-6) Printing the status of the session: 
+2017-10-03 10:31:05,895 INFO  [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-6) In transaction delegate--------->addMoneyToWallet
+2017-10-03 10:31:05,895 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) In startDBTransaction
+2017-10-03 10:31:05,896 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) In setConnection
+2017-10-03 10:31:05,896 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) In getConnection
+2017-10-03 10:31:05,896 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-6) In <init>
+2017-10-03 10:31:05,896 INFO  [com.alacriti.p2p.bo.impl.TransactionBO] (default task-6) In addMoneyToWallet
+2017-10-03 10:31:05,896 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-6) In getConnection
+2017-10-03 10:31:05,896 INFO  [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-6) In addMoneyToWallet
+2017-10-03 10:31:05,897 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In getConnection
+2017-10-03 10:31:05,898 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In getConnection
+2017-10-03 10:31:05,898 ERROR [com.alacriti.p2p.dao.impl.TransactionDAO] (default task-6) SQLException in addMoneyToWallet You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.jboss.jca.adapters.jdbc.WrappedPreparedStatement.executeUpdate(WrappedPreparedStatement.java:537)
+	at com.alacriti.p2p.dao.impl.TransactionDAO.addMoneyToWallet(TransactionDAO.java:39)
+	at com.alacriti.p2p.bo.impl.TransactionBO.addMoneyToWallet(TransactionBO.java:26)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.addMoneyToWallet(TransactionDelegate.java:23)
+	at com.alacriti.p2p.resteasy.resources.TransactionResource.addMoneyToWallet(TransactionResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-03 10:31:05,899 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In close
+2017-10-03 10:31:05,899 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In close
+2017-10-03 10:31:05,900 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-6) In close
+2017-10-03 10:31:05,900 ERROR [com.alacriti.p2p.bo.impl.TransactionBO] (default task-6) Exception in retrieveMessage null: com.alacriti.p2p.dao.impl.DAOException
+	at com.alacriti.p2p.dao.impl.TransactionDAO.addMoneyToWallet(TransactionDAO.java:48)
+	at com.alacriti.p2p.bo.impl.TransactionBO.addMoneyToWallet(TransactionBO.java:26)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.addMoneyToWallet(TransactionDelegate.java:23)
+	at com.alacriti.p2p.resteasy.resources.TransactionResource.addMoneyToWallet(TransactionResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-03 10:31:05,900 ERROR [com.alacriti.p2p.biz.delegate.TransactionDelegate] (default task-6) Exception in getMessage null: com.alacriti.p2p.bo.impl.BOException
+	at com.alacriti.p2p.bo.impl.TransactionBO.addMoneyToWallet(TransactionBO.java:30)
+	at com.alacriti.p2p.biz.delegate.TransactionDelegate.addMoneyToWallet(TransactionDelegate.java:23)
+	at com.alacriti.p2p.resteasy.resources.TransactionResource.addMoneyToWallet(TransactionResource.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-03 10:31:05,907 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) In endDBTransaction
+2017-10-03 10:31:05,961 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-6) Rolled Back on some exception....!!!
+2017-10-03 11:50:21,224 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-8) --> userSignUp method in UserResource class:: 
+2017-10-03 11:50:21,249 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-8) In User delegate--------->addNewUser
+2017-10-03 11:50:21,249 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In startDBTransaction
+2017-10-03 11:50:21,249 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In setConnection
+2017-10-03 11:50:21,250 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In getConnection
+2017-10-03 11:50:21,250 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-8) In <init>
+2017-10-03 11:50:21,250 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-8) In userSignIn
+2017-10-03 11:50:21,250 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-8) In getConnection
+2017-10-03 11:50:21,250 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-8) In userSignIn
+2017-10-03 11:50:21,250 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In getConnection
+2017-10-03 11:50:21,251 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In close
+2017-10-03 11:50:21,252 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In close
+2017-10-03 11:50:21,252 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In close
+2017-10-03 11:50:21,252 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In endDBTransaction
+2017-10-03 11:50:21,252 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In endDBTransaction
+2017-10-03 11:50:21,253 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-8) ---> createSession method in SessionUtility class
+2017-10-03 11:50:21,254 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-8) Printing the status of the session: 
+2017-10-03 14:03:27,680 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-2) --> userSignUp method in UserResource class:: 
+2017-10-03 14:03:27,683 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-2) In User delegate--------->addNewUser
+2017-10-03 14:03:27,683 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In startDBTransaction
+2017-10-03 14:03:27,699 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In setConnection
+2017-10-03 14:03:27,700 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In getConnection
+2017-10-03 14:03:27,701 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In <init>
+2017-10-03 14:03:27,701 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-2) In userSignIn
+2017-10-03 14:03:27,702 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In getConnection
+2017-10-03 14:03:27,702 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-2) In userSignIn
+2017-10-03 14:03:27,702 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In getConnection
+2017-10-03 14:03:27,719 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-03 14:03:27,720 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-03 14:03:27,720 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-03 14:03:27,720 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-03 14:03:27,720 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-03 14:03:27,722 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-2) ---> createSession method in SessionUtility class
+2017-10-03 14:03:27,724 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-2) Printing the status of the session: 
+2017-10-03 14:09:46,146 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-4) --> userSignUp method in UserResource class:: 
+2017-10-03 14:09:46,156 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-4) In User delegate--------->addNewUser
+2017-10-03 14:09:46,157 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In startDBTransaction
+2017-10-03 14:09:46,158 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In setConnection
+2017-10-03 14:09:46,158 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In getConnection
+2017-10-03 14:09:46,159 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-4) In <init>
+2017-10-03 14:09:46,159 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-4) In userSignIn
+2017-10-03 14:09:46,159 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-4) In getConnection
+2017-10-03 14:09:46,159 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-4) In userSignIn
+2017-10-03 14:09:46,160 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In getConnection
+2017-10-03 14:09:46,161 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-03 14:09:46,161 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-03 14:09:46,161 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-4) In close
+2017-10-03 14:09:46,162 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In endDBTransaction
+2017-10-03 14:09:46,162 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-4) In endDBTransaction
+2017-10-03 14:09:46,162 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-4) ---> createSession method in SessionUtility class
+2017-10-03 14:09:46,162 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-4) Printing the status of the session: 
+2017-10-03 14:10:47,088 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-5) --> userSignUp method in UserResource class:: 
+2017-10-03 14:10:47,106 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-5) In User delegate--------->addNewUser
+2017-10-03 14:10:47,107 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In startDBTransaction
+2017-10-03 14:10:47,107 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In setConnection
+2017-10-03 14:10:47,107 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In getConnection
+2017-10-03 14:10:47,107 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-5) In <init>
+2017-10-03 14:10:47,107 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-5) In userSignIn
+2017-10-03 14:10:47,108 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-5) In getConnection
+2017-10-03 14:10:47,108 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-5) In userSignIn
+2017-10-03 14:10:47,108 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In getConnection
+2017-10-03 14:10:47,110 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In close
+2017-10-03 14:10:47,110 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In close
+2017-10-03 14:10:47,110 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-5) In close
+2017-10-03 14:10:47,111 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In endDBTransaction
+2017-10-03 14:10:47,111 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-5) In endDBTransaction
+2017-10-03 14:10:47,111 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-5) ---> createSession method in SessionUtility class
+2017-10-03 14:10:47,111 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-5) Printing the status of the session: 
+2017-10-03 14:13:53,386 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-7) --> userSignUp method in UserResource class:: 
+2017-10-03 14:13:53,407 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-7) In User delegate--------->addNewUser
+2017-10-03 14:13:53,407 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In startDBTransaction
+2017-10-03 14:13:53,407 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In setConnection
+2017-10-03 14:13:53,408 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In getConnection
+2017-10-03 14:13:53,408 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-7) In <init>
+2017-10-03 14:13:53,408 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-7) In userSignIn
+2017-10-03 14:13:53,408 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-7) In getConnection
+2017-10-03 14:13:53,408 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-7) In userSignIn
+2017-10-03 14:13:53,409 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-7) In getConnection
+2017-10-03 14:13:53,410 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-7) In close
+2017-10-03 14:13:53,410 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-7) In close
+2017-10-03 14:13:53,412 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-7) In close
+2017-10-03 14:13:53,412 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In endDBTransaction
+2017-10-03 14:13:53,413 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-7) In endDBTransaction
+2017-10-03 14:13:53,471 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-7) ---> createSession method in SessionUtility class
+2017-10-03 14:13:53,472 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-7) Printing the status of the session: 
+2017-10-03 14:15:24,195 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-8) --> userSignUp method in UserResource class:: 
+2017-10-03 14:15:24,196 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-8) In User delegate--------->addNewUser
+2017-10-03 14:15:24,196 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In startDBTransaction
+2017-10-03 14:15:24,196 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In setConnection
+2017-10-03 14:15:24,197 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In getConnection
+2017-10-03 14:15:24,197 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-8) In <init>
+2017-10-03 14:15:24,197 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-8) In userSignIn
+2017-10-03 14:15:24,197 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-8) In getConnection
+2017-10-03 14:15:24,198 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-8) In userSignIn
+2017-10-03 14:15:24,198 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In getConnection
+2017-10-03 14:15:24,199 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In close
+2017-10-03 14:15:24,200 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In close
+2017-10-03 14:15:24,200 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-8) In close
+2017-10-03 14:15:24,201 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In endDBTransaction
+2017-10-03 14:15:24,201 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-8) In endDBTransaction
+2017-10-03 14:15:24,203 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-8) ---> createSession method in SessionUtility class
+2017-10-03 14:15:24,203 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-8) Printing the status of the session: 
+2017-10-03 14:16:37,172 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-9) --> userSignUp method in UserResource class:: 
+2017-10-03 14:16:37,172 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-9) In User delegate--------->addNewUser
+2017-10-03 14:16:37,173 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In startDBTransaction
+2017-10-03 14:16:37,173 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In setConnection
+2017-10-03 14:16:37,174 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In getConnection
+2017-10-03 14:16:37,174 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-9) In <init>
+2017-10-03 14:16:37,174 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-9) In userSignIn
+2017-10-03 14:16:37,174 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-9) In getConnection
+2017-10-03 14:16:37,174 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-9) In userSignIn
+2017-10-03 14:16:37,174 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In getConnection
+2017-10-03 14:16:37,177 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In close
+2017-10-03 14:16:37,177 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In close
+2017-10-03 14:16:37,178 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-9) In close
+2017-10-03 14:16:37,178 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In endDBTransaction
+2017-10-03 14:16:37,178 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-9) In endDBTransaction
+2017-10-03 14:16:37,178 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-9) ---> createSession method in SessionUtility class
+2017-10-03 14:16:37,178 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-9) Printing the status of the session: 
+2017-10-03 14:26:21,122 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-11) --> userSignUp method in UserResource class:: 
+2017-10-03 14:26:21,124 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-11) In User delegate--------->addNewUser
+2017-10-03 14:26:21,124 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In startDBTransaction
+2017-10-03 14:26:21,125 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In setConnection
+2017-10-03 14:26:21,125 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In getConnection
+2017-10-03 14:26:21,126 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-11) In <init>
+2017-10-03 14:26:21,127 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-11) In userSignIn
+2017-10-03 14:26:21,127 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-11) In getConnection
+2017-10-03 14:26:21,127 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-11) In userSignIn
+2017-10-03 14:26:21,127 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In getConnection
+2017-10-03 14:26:21,130 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In close
+2017-10-03 14:26:21,132 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In close
+2017-10-03 14:26:21,133 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-11) In close
+2017-10-03 14:26:21,133 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In endDBTransaction
+2017-10-03 14:26:21,134 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-11) In endDBTransaction
+2017-10-03 14:26:21,135 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-11) ---> createSession method in SessionUtility class
+2017-10-03 14:26:21,135 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-11) Printing the status of the session: 
+2017-10-03 14:28:51,131 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-12) --> userSignUp method in UserResource class:: 
+2017-10-03 14:28:51,131 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-12) In User delegate--------->addNewUser
+2017-10-03 14:28:51,132 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In startDBTransaction
+2017-10-03 14:28:51,132 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In setConnection
+2017-10-03 14:28:51,138 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In getConnection
+2017-10-03 14:28:51,139 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-12) In <init>
+2017-10-03 14:28:51,139 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-12) In userSignIn
+2017-10-03 14:28:51,139 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-12) In getConnection
+2017-10-03 14:28:51,140 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-12) In userSignIn
+2017-10-03 14:28:51,140 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In getConnection
+2017-10-03 14:28:51,141 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In close
+2017-10-03 14:28:51,142 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In close
+2017-10-03 14:28:51,142 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-12) In close
+2017-10-03 14:28:51,143 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In endDBTransaction
+2017-10-03 14:28:51,143 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-12) In endDBTransaction
+2017-10-03 14:28:51,145 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-12) ---> createSession method in SessionUtility class
+2017-10-03 14:28:51,145 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-12) Printing the status of the session: 
+2017-10-03 14:30:03,169 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-13) --> userSignUp method in UserResource class:: 
+2017-10-03 14:30:03,169 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-13) In User delegate--------->addNewUser
+2017-10-03 14:30:03,169 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In startDBTransaction
+2017-10-03 14:30:03,170 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In setConnection
+2017-10-03 14:30:03,170 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In getConnection
+2017-10-03 14:30:03,170 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-13) In <init>
+2017-10-03 14:30:03,170 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-13) In userSignIn
+2017-10-03 14:30:03,170 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-13) In getConnection
+2017-10-03 14:30:03,170 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-13) In userSignIn
+2017-10-03 14:30:03,170 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In getConnection
+2017-10-03 14:30:03,172 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-03 14:30:03,172 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-03 14:30:03,172 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-13) In close
+2017-10-03 14:30:03,172 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In endDBTransaction
+2017-10-03 14:30:03,173 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-13) In endDBTransaction
+2017-10-03 14:30:03,173 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-13) ---> createSession method in SessionUtility class
+2017-10-03 14:30:03,173 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-13) Printing the status of the session: 
+2017-10-03 14:31:34,187 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-15) --> userSignUp method in UserResource class:: 
+2017-10-03 14:31:34,187 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-15) In User delegate--------->addNewUser
+2017-10-03 14:31:34,187 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In startDBTransaction
+2017-10-03 14:31:34,188 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In setConnection
+2017-10-03 14:31:34,188 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In getConnection
+2017-10-03 14:31:34,188 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-15) In <init>
+2017-10-03 14:31:34,188 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-15) In userSignIn
+2017-10-03 14:31:34,188 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-15) In getConnection
+2017-10-03 14:31:34,189 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-15) In userSignIn
+2017-10-03 14:31:34,189 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In getConnection
+2017-10-03 14:31:34,190 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-03 14:31:34,190 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-03 14:31:34,190 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-15) In close
+2017-10-03 14:31:34,190 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In endDBTransaction
+2017-10-03 14:31:34,191 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-15) In endDBTransaction
+2017-10-03 14:31:34,191 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-15) ---> createSession method in SessionUtility class
+2017-10-03 14:31:34,191 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-15) Printing the status of the session: 
+2017-10-03 14:33:06,232 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-16) --> userSignUp method in UserResource class:: 
+2017-10-03 14:33:06,232 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-16) In User delegate--------->addNewUser
+2017-10-03 14:33:06,233 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-16) In startDBTransaction
+2017-10-03 14:33:06,233 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-16) In setConnection
+2017-10-03 14:33:06,233 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-16) In getConnection
+2017-10-03 14:33:06,234 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-16) In <init>
+2017-10-03 14:33:06,234 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-16) In userSignIn
+2017-10-03 14:33:06,234 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-16) In getConnection
+2017-10-03 14:33:06,234 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-16) In userSignIn
+2017-10-03 14:33:06,234 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-16) In getConnection
+2017-10-03 14:33:06,235 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-16) In close
+2017-10-03 14:33:06,236 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-16) In close
+2017-10-03 14:33:06,236 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-16) In close
+2017-10-03 14:33:06,236 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-16) In endDBTransaction
+2017-10-03 14:33:06,236 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-16) In endDBTransaction
+2017-10-03 14:33:06,236 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-16) ---> createSession method in SessionUtility class
+2017-10-03 14:33:06,236 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-16) Printing the status of the session: 
+2017-10-03 14:33:58,156 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-18) --> userSignUp method in UserResource class:: 
+2017-10-03 14:33:58,157 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-18) In User delegate--------->addNewUser
+2017-10-03 14:33:58,158 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In startDBTransaction
+2017-10-03 14:33:58,159 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In setConnection
+2017-10-03 14:33:58,159 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In getConnection
+2017-10-03 14:33:58,159 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-18) In <init>
+2017-10-03 14:33:58,159 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-18) In userSignIn
+2017-10-03 14:33:58,160 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-18) In getConnection
+2017-10-03 14:33:58,160 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-18) In userSignIn
+2017-10-03 14:33:58,160 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In getConnection
+2017-10-03 14:33:58,162 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In close
+2017-10-03 14:33:58,163 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In close
+2017-10-03 14:33:58,163 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-18) In close
+2017-10-03 14:33:58,163 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In endDBTransaction
+2017-10-03 14:33:58,163 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-18) In endDBTransaction
+2017-10-03 14:33:58,164 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-18) ---> createSession method in SessionUtility class
+2017-10-03 14:33:58,164 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-18) Printing the status of the session: 
+2017-10-03 14:34:44,057 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-19) --> userSignUp method in UserResource class:: 
+2017-10-03 14:34:44,057 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-19) In User delegate--------->addNewUser
+2017-10-03 14:34:44,058 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In startDBTransaction
+2017-10-03 14:34:44,058 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In setConnection
+2017-10-03 14:34:44,059 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In getConnection
+2017-10-03 14:34:44,059 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-19) In <init>
+2017-10-03 14:34:44,059 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-19) In userSignIn
+2017-10-03 14:34:44,060 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-19) In getConnection
+2017-10-03 14:34:44,060 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-19) In userSignIn
+2017-10-03 14:34:44,060 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In getConnection
+2017-10-03 14:34:44,062 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-03 14:34:44,063 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-03 14:34:44,063 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-19) In close
+2017-10-03 14:34:44,063 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In endDBTransaction
+2017-10-03 14:34:44,064 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-19) In endDBTransaction
+2017-10-03 14:34:44,064 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-19) ---> createSession method in SessionUtility class
+2017-10-03 14:34:44,064 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-19) Printing the status of the session: 
+2017-10-03 14:51:22,231 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-23) --> userSignUp method in UserResource class:: 
+2017-10-03 14:51:22,231 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-23) In User delegate--------->addNewUser
+2017-10-03 14:51:22,232 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In startDBTransaction
+2017-10-03 14:51:22,232 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In setConnection
+2017-10-03 14:51:22,232 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In getConnection
+2017-10-03 14:51:22,232 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-23) In <init>
+2017-10-03 14:51:22,233 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-23) In userSignIn
+2017-10-03 14:51:22,233 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-23) In getConnection
+2017-10-03 14:51:22,233 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-23) In userSignIn
+2017-10-03 14:51:22,233 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In getConnection
+2017-10-03 14:51:22,234 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In close
+2017-10-03 14:51:22,234 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In close
+2017-10-03 14:51:22,235 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-23) In close
+2017-10-03 14:51:22,235 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In endDBTransaction
+2017-10-03 14:51:22,235 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-23) In endDBTransaction
+2017-10-03 14:51:22,235 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-23) ---> createSession method in SessionUtility class
+2017-10-03 14:51:22,235 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-23) Printing the status of the session: 
+2017-10-03 15:06:00,126 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-26) --> userSignUp method in UserResource class:: 
+2017-10-03 15:06:00,126 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-26) In User delegate--------->addNewUser
+2017-10-03 15:06:00,126 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-26) In startDBTransaction
+2017-10-03 15:06:00,127 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-26) In setConnection
+2017-10-03 15:06:00,127 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-26) In getConnection
+2017-10-03 15:06:00,127 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-26) In <init>
+2017-10-03 15:06:00,127 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-26) In userSignIn
+2017-10-03 15:06:00,127 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-26) In getConnection
+2017-10-03 15:06:00,127 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-26) In userSignIn
+2017-10-03 15:06:00,127 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-26) In getConnection
+2017-10-03 15:06:00,134 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-26) In close
+2017-10-03 15:06:00,134 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-26) In close
+2017-10-03 15:06:00,134 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-26) In close
+2017-10-03 15:06:00,135 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-26) In endDBTransaction
+2017-10-03 15:06:00,135 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-26) In endDBTransaction
+2017-10-03 15:06:00,135 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-26) ---> createSession method in SessionUtility class
+2017-10-03 15:06:00,135 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-26) Printing the status of the session: 
+2017-10-03 15:18:18,131 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-28) --> userSignUp method in UserResource class:: 
+2017-10-03 15:18:18,131 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-28) In User delegate--------->addNewUser
+2017-10-03 15:18:18,131 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In startDBTransaction
+2017-10-03 15:18:18,132 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In setConnection
+2017-10-03 15:18:18,132 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In getConnection
+2017-10-03 15:18:18,132 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-28) In <init>
+2017-10-03 15:18:18,132 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-28) In userSignIn
+2017-10-03 15:18:18,132 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-28) In getConnection
+2017-10-03 15:18:18,132 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-28) In userSignIn
+2017-10-03 15:18:18,132 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In getConnection
+2017-10-03 15:18:18,134 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In close
+2017-10-03 15:18:18,135 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In close
+2017-10-03 15:18:18,135 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-28) In close
+2017-10-03 15:18:18,135 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In endDBTransaction
+2017-10-03 15:18:18,135 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-28) In endDBTransaction
+2017-10-03 15:18:18,136 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-28) ---> createSession method in SessionUtility class
+2017-10-03 15:18:18,137 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-28) Printing the status of the session: 
+2017-10-03 15:21:57,122 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-31) --> userSignUp method in UserResource class:: 
+2017-10-03 15:21:57,122 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-31) In User delegate--------->addNewUser
+2017-10-03 15:21:57,122 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In startDBTransaction
+2017-10-03 15:21:57,123 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In setConnection
+2017-10-03 15:21:57,123 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In getConnection
+2017-10-03 15:21:57,123 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-31) In <init>
+2017-10-03 15:21:57,123 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-31) In userSignIn
+2017-10-03 15:21:57,123 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-31) In getConnection
+2017-10-03 15:21:57,123 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-31) In userSignIn
+2017-10-03 15:21:57,123 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-31) In getConnection
+2017-10-03 15:21:57,124 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-31) In close
+2017-10-03 15:21:57,124 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-31) In close
+2017-10-03 15:21:57,125 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-31) In close
+2017-10-03 15:21:57,125 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In endDBTransaction
+2017-10-03 15:21:57,125 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-31) In endDBTransaction
+2017-10-03 15:21:57,126 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-31) ---> createSession method in SessionUtility class
+2017-10-03 15:21:57,126 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-31) Printing the status of the session: 
+2017-10-03 15:25:44,196 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-32) --> userSignUp method in UserResource class:: 
+2017-10-03 15:25:44,196 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-32) In User delegate--------->addNewUser
+2017-10-03 15:25:44,197 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In startDBTransaction
+2017-10-03 15:25:44,197 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In setConnection
+2017-10-03 15:25:44,197 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In getConnection
+2017-10-03 15:25:44,197 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-32) In <init>
+2017-10-03 15:25:44,198 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-32) In userSignIn
+2017-10-03 15:25:44,198 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-32) In getConnection
+2017-10-03 15:25:44,198 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-32) In userSignIn
+2017-10-03 15:25:44,198 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-32) In getConnection
+2017-10-03 15:25:44,200 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-32) In close
+2017-10-03 15:25:44,200 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-32) In close
+2017-10-03 15:25:44,200 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-32) In close
+2017-10-03 15:25:44,201 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In endDBTransaction
+2017-10-03 15:25:44,201 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-32) In endDBTransaction
+2017-10-03 15:25:44,201 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-32) ---> createSession method in SessionUtility class
+2017-10-03 15:25:44,201 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-32) Printing the status of the session: 
+2017-10-03 15:31:22,119 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-33) --> userSignUp method in UserResource class:: 
+2017-10-03 15:31:22,119 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-33) In User delegate--------->addNewUser
+2017-10-03 15:31:22,120 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In startDBTransaction
+2017-10-03 15:31:22,120 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In setConnection
+2017-10-03 15:31:22,121 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In getConnection
+2017-10-03 15:31:22,121 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-33) In <init>
+2017-10-03 15:31:22,121 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-33) In userSignIn
+2017-10-03 15:31:22,121 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-33) In getConnection
+2017-10-03 15:31:22,122 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-33) In userSignIn
+2017-10-03 15:31:22,122 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-33) In getConnection
+2017-10-03 15:31:22,124 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-33) In close
+2017-10-03 15:31:22,124 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-33) In close
+2017-10-03 15:31:22,124 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-33) In close
+2017-10-03 15:31:22,124 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In endDBTransaction
+2017-10-03 15:31:22,125 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-33) In endDBTransaction
+2017-10-03 15:31:22,125 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-33) ---> createSession method in SessionUtility class
+2017-10-03 15:31:22,125 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-33) Printing the status of the session: 
+2017-10-03 15:33:48,201 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-35) --> userSignUp method in UserResource class:: 
+2017-10-03 15:33:48,202 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-35) In User delegate--------->addNewUser
+2017-10-03 15:33:48,202 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In startDBTransaction
+2017-10-03 15:33:48,202 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In setConnection
+2017-10-03 15:33:48,202 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In getConnection
+2017-10-03 15:33:48,202 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-35) In <init>
+2017-10-03 15:33:48,203 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-35) In userSignIn
+2017-10-03 15:33:48,203 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-35) In getConnection
+2017-10-03 15:33:48,203 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-35) In userSignIn
+2017-10-03 15:33:48,203 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-35) In getConnection
+2017-10-03 15:33:48,204 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-35) In close
+2017-10-03 15:33:48,204 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-35) In close
+2017-10-03 15:33:48,204 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-35) In close
+2017-10-03 15:33:48,204 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In endDBTransaction
+2017-10-03 15:33:48,205 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-35) In endDBTransaction
+2017-10-03 15:33:48,205 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-35) ---> createSession method in SessionUtility class
+2017-10-03 15:33:48,205 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-35) Printing the status of the session: 
+2017-10-03 15:53:04,262 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-38) --> userSignUp method in UserResource class:: 
+2017-10-03 15:53:04,263 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-38) In User delegate--------->addNewUser
+2017-10-03 15:53:04,263 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In startDBTransaction
+2017-10-03 15:53:04,263 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In setConnection
+2017-10-03 15:53:04,263 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In getConnection
+2017-10-03 15:53:04,264 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-38) In <init>
+2017-10-03 15:53:04,264 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-38) In userSignIn
+2017-10-03 15:53:04,264 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-38) In getConnection
+2017-10-03 15:53:04,264 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-38) In userSignIn
+2017-10-03 15:53:04,264 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-38) In getConnection
+2017-10-03 15:53:04,265 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-38) In close
+2017-10-03 15:53:04,266 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-38) In close
+2017-10-03 15:53:04,267 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-38) In close
+2017-10-03 15:53:04,267 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In endDBTransaction
+2017-10-03 15:53:04,267 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-38) In endDBTransaction
+2017-10-03 15:53:04,267 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-38) ---> createSession method in SessionUtility class
+2017-10-03 15:53:04,267 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-38) Printing the status of the session: 
+2017-10-03 16:16:10,441 DEBUG [com.alacriti.p2p.resteasy.resources.UserResource] (default task-2) --> userSignUp method in UserResource class:: 
+2017-10-03 16:16:10,442 INFO  [com.alacriti.p2p.biz.delegate.UserDelegate] (default task-2) In User delegate--------->addNewUser
+2017-10-03 16:16:10,443 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In startDBTransaction
+2017-10-03 16:16:10,450 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In setConnection
+2017-10-03 16:16:10,452 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In getConnection
+2017-10-03 16:16:10,452 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In <init>
+2017-10-03 16:16:10,452 INFO  [com.alacriti.p2p.bo.impl.UserBO] (default task-2) In userSignIn
+2017-10-03 16:16:10,455 INFO  [com.alacriti.p2p.bo.impl.BaseBO] (default task-2) In getConnection
+2017-10-03 16:16:10,455 INFO  [com.alacriti.p2p.dao.impl.UserDAO] (default task-2) In userSignIn
+2017-10-03 16:16:10,455 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In getConnection
+2017-10-03 16:16:10,473 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-03 16:16:10,473 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-03 16:16:10,474 INFO  [com.alacriti.p2p.dao.impl.BaseDAO] (default task-2) In close
+2017-10-03 16:16:10,474 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-03 16:16:10,475 INFO  [com.alacriti.p2p.biz.delegate.BaseDelegate] (default task-2) In endDBTransaction
+2017-10-03 16:16:10,475 DEBUG [com.alacriti.p2p.util.SessionUtility] (default task-2) ---> createSession method in SessionUtility class
+2017-10-03 16:16:10,477 INFO  [com.alacriti.p2p.util.SessionUtility] (default task-2) Printing the status of the session: 

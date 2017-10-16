@@ -1,0 +1,66 @@
+.form-inline {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+table {
+  border-collapse: separate;
+  background: #fff;
+  border-radius:5px;
+  margin:50px auto;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  min-width: 600px;
+}
+
+thead {
+ border-radius:5px;
+}
+
+thead th {
+  font-family: 'Patua One', cursive;
+  font-size: larger;
+  font-weight: 400;
+  color: #000;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding: 20px;
+  background-color: #96cec5;
+  border-top: 1px solid #858d99;
+}
+thead th:first-child {
+ border-top-left-radius:5px;
+}
+
+thead th:last-child {
+ border-top-right-radius :5px;
+}
+
+tbody tr td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color:#5f6062;
+  font-size:13px;
+  padding:20px 20px 20px 20px;
+  border-bottom:1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(2n) {
+  background:#f0f3f5;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:first-child {
+  border-bottom-left-radius:5px;
+}
+tbody tr:last-child {
+  border-bottom-right-radius:5px;
+}
+
+.btn-primary{
+  background: #c2e59c;
+  background: linear-gradient(to right, #64b3f4, #c2e59c);
+  color: black;
+}
+
